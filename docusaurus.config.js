@@ -14,10 +14,10 @@ const config = {
     v4: true,
   },
 
-  url: 'https://your-docusaurus-site.example.com',//换
-  baseUrl: '/',//换
+  url: 'https://caplumo.github.io',
+  baseUrl: '/SIC-Wiki/',//换
 
-  organizationName: 'your-github-username',
+  organizationName: 'Caplumo',
   projectName: 'SIC-Wiki',
 
   onBrokenLinks: 'throw',
