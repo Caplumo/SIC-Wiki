@@ -7,7 +7,7 @@ import img115 from "./00-img/图1-1-5.webp";
 # 移动端1.5
 
 下文中所解析文件前方均以"--"代替，PC端为
-`{com.StefMorojna.SpaceflightSimulator}`
+`{根目录下/com.StefMorojna.SpaceflightSimulator}`
 `{/storage/emulated/0/Android/data/com.StefMorojna.SpaceflightSimulator/}`
 
 ## 自定义语言包 / Custom Translations
@@ -120,6 +120,11 @@ import img115 from "./00-img/图1-1-5.webp";
 
 此文件内存储的是航天器日志。
 
+<div class="img-screen">
+  <img src={img114} alt="图1-1-4 科技树" />
+  <p>▲1-1-4</p>
+</div>
+
 #### CareerState.txt
 
 此文件内存储的是生涯模式中解锁的科技，其完整格式为：
@@ -127,11 +132,6 @@ import img115 from "./00-img/图1-1-5.webp";
 `{"funds":25.0,"unlocked_Parts":["HeatShield_0_0","EngineValiant_0_0"],"unlocked_Upgrades":["Staging","Side Boosters 1","Liquids 1","Powerful Rocketry","Landing"]}`
 
 其中，"funds"为资金，单位为百万。
-
-<div class="img-screen">
-  <img src={img114} alt="图1-1-4 科技树" />
-  <p>▲1-1-4</p>
-</div>
 
 图1-1-4为解锁部件(unlocked_Parts)与解锁升级(unlocked_Upgrades)所对应的游戏科技树节点。
 
@@ -143,14 +143,14 @@ import img115 from "./00-img/图1-1-5.webp";
 
 其中内容为英文原文的挑战名称，以","分隔，拓展星球的挑战内容自动生成。
 
-#### Rockets.txt
-
-此文件内存储的是世界中现有的火箭数据。这里以图1-1-5火箭举例，零件摆放顺序为依次从上至下，当引擎关闭，节流阀关闭，并调节至80%，快捷栏内容如图所示。
-
 <div class="img-screen">
   <img src={img115} alt="图1-1-5 示例火箭" />
   <p>▲1-1-5</p>
 </div>
+
+#### Rockets.txt
+
+此文件内存储的是世界中现有的火箭数据。这里以图1-1-5火箭举例，零件摆放顺序为依次从上至下，当引擎关闭，节流阀关闭，并调节至80%，快捷栏内容如图所示。
 
 其内容为：
 

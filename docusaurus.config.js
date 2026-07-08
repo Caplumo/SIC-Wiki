@@ -14,8 +14,8 @@ const config = {
     v4: true,
   },
 
-  url: 'https://caplumo.github.io',
-  baseUrl: '/SIC-Wiki/',//换
+  url: 'https://Caplumo.github.io',
+  baseUrl: '/SIC-Wiki/',
 
   organizationName: 'Caplumo',
   projectName: 'SIC-Wiki',
