@@ -5,7 +5,7 @@ const sidebars = {
     {
       type: 'category',
       label: '群聊',
-      items: ['group/TSCG', 'group/POLAB'],
+      items: ['group/TSCG', 'group/POLABBB'],
     },
     {
       type: 'category',
