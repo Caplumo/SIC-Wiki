@@ -116,12 +116,12 @@ blockquote,code,.DocSearch-Button-Placeholder{
   color: var(--tips);
 }
 
-code,pre,pre code,blockquote,.menu__caret,.DocSearch-Button{
+code,blockquote,.menu__caret,.DocSearch-Button{
     background-color: var(--pad);
 }
 
 @media (hover: hover) and (pointer: fine) {
-  code,pre,pre code,blockquote,.menu__caret,.DocSearch-Button{
+  code,blockquote,.menu__caret,.DocSearch-Button{
     background-color: var(--pad);
     backdrop-filter: blur(2px);
     isolation: isolate;
