@@ -116,10 +116,10 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
       docs: {
-       sidebar: {
-        hideable: true,
+        sidebar: {
+          hideable: true,
         },
-      }
+        }
       }
     ),
 };

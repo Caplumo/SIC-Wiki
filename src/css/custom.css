@@ -19,6 +19,13 @@
   --img-screen: 25%;
   --img-part: 30%;
 }
+/*动画管理*/
+@keyframes search {/*搜索框展开动画*/
+  from {
+    background-color: var(--pad);
+    border-radius: 20px;
+  }
+}
 /*默认主题*/
 
 /* 暗主题 */
@@ -184,7 +191,7 @@ body::after {
   content: '';
   position: fixed;
   inset: 0;
-  border: 0px 1px solid var(--line);
+  box-shadow: inset 1px 0 0 var(--line), inset -1px 0 0 var(--line);
   pointer-events: none;
   z-index: 9999;
 }
@@ -192,6 +199,7 @@ body::after {
 @media (hover: hover) and (pointer: fine) {
   body::after {
     content: '';
+    box-shadow: none;
     position: fixed;
     inset: 0;
     border: 1px solid var(--line);
@@ -219,10 +227,10 @@ body::after {
 
 @media not all and (hover: hover) and (pointer: fine) {
     .navbar__search-input.searchInput_YFbd.input_FOTf:focus{
+    animation: search 0.3s ease forwards;
     width: 91vw;
     background-color: var(--bg);
     border-radius: 0px;
-    transition: 0.3s;
   }
 }
 
