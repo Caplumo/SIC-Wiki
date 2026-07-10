@@ -9,7 +9,8 @@
   --bg: rgb(235, 240, 240);
   --link: #004ab8;
   --cover: rgba(255, 255, 255, 0.6);
-  --bg-image: url("/img/bgd.webp");
+  --null: #00000000;
+  --bg-image: url('/img/bgd.webp');
   --ifm-code-font-size: 95%;
   --doc-sidebar-width: 300px;
   --head-height: 49px;
@@ -22,7 +23,7 @@
 /*默认主题*/
 
 /* 暗主题 */
-[data-theme="dark"] {
+[data-theme='dark'] {
   --text: #62cccc;
   --title: #b4d9e3;
   --important: #4faeee;
@@ -32,11 +33,11 @@
   --bg: rgb(30, 30, 30);
   --link: #1969e1;
   --cover: rgba(0, 0, 0, 0.7);
-  --bg-image: url("/img/bg.webp");
+  --bg-image: url('/img/bg.webp');
 }
 
 .navbar-sidebar__backdrop {
-  background-color: #00000000;
+  background-color: var(--null);
 }
 /*暗主题*/
 
@@ -58,7 +59,7 @@
 
 /*背景图遮罩+变暗清除*/
 body::before {
-  content: "";
+  content: '';
   position: fixed;
   top: 0;
   left: 0;
@@ -79,7 +80,7 @@ body::before {
 }
 
 .theme-doc-sidebar-container {
-  background-color: #00000000;
+  background-color: var(--null);
   border: 1px solid var(--line);
   padding: calc(var(--head-height) + 1px) 0 0 0;
   backdrop-filter: blur(2px);
@@ -87,7 +88,7 @@ body::before {
 
 .theme-layout-navbar-sidebar-panel,
 .theme-layout-navbar-sidebar.navbar-sidebar {
-  background-color: #00000000;
+  background-color: var(--null);
   border: 1px solid var(--line);
   backdrop-filter: blur(12px);
 }
@@ -104,7 +105,7 @@ body::before {
   backdrop-filter: blur(2px);
   vertical-align: top;
 }
-/*全局颜色*/
+/*全局颜色+基础样式*/
 p,
 h4,
 h5,
@@ -130,7 +131,7 @@ h3,
 }
 
 h1,
-[class*="navbar__link--active"],
+[class*='navbar__link--active'],
 .menu__link--active,
 .table-of-contents__link--active {
   color: var(--important);
@@ -163,6 +164,7 @@ table {
   border-color: var(--line);
 }
 
+a,
 .navbar__link:hover,
 .navbar__title:hover,
 .menu__link:hover,
@@ -171,20 +173,34 @@ table {
   color: var(--link);
 }
 
+/*额外样式*/
 blockquote {
   border-left: 4px solid var(--line);
   border-radius: 3px;
   overflow: auto;
-  isolation: isolate;
 }
+
+pre {
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0.3rem;
+}
+
+pre code {
+  background-color: var(--null);
+  backdrop-filter: none;
+}
+
 /* 图片控制 */
-[class^="img-"] {
+[class^='img-'] {
   margin: 0 auto;
   margin-left: 1rem;
 }
 
-[class^="img-"] p,
-[class^="img-"] blockquote {
+[class^='img-'] p,
+[class^='img-'] blockquote {
   margin: 0 auto;
   padding: 0;
   text-align: center;
@@ -213,6 +229,7 @@ blockquote {
   aspect-ratio: 45/20;
   overflow: auto;
 }
+
 /*背景图+全局字体+全局边框*/
 html {
   background-image: var(--bg-image);
@@ -221,12 +238,12 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family:
-    "Microsoft YaHei", "微软雅黑", "PingFang SC", "Hiragino Sans GB",
-    "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    'Microsoft YaHei', '微软雅黑', 'PingFang SC', 'Hiragino Sans GB',
+    'Heiti SC', 'WenQuanYi Micro Hei', sans-serif;
 }
 
 body::after {
-  content: "";
+  content: '';
   position: fixed;
   inset: 0;
   box-shadow:
@@ -277,11 +294,4 @@ article img {
   .navbar__title.text--truncate {
     display: none;
   }
-}
-
-/*关于pre标签的分段代码段补充*/
-pre {
-  display: inline-block; /*宽度自适应*/
-  border: 1px solid var(--line); /*边框*/
-  padding: 1.1em 0.8em 0em 0.8em; /*内边距(上下值不同以此解决上下边距不同的问题)*/
 }
