@@ -1,0 +1,250 @@
+import img111 from "./00-img/图1-1-1.webp";
+import img112 from "./00-img/图1-1-2.webp";
+import img113 from "./00-img/图1-1-3.webp";
+import img114 from "./00-img/图1-1-4.webp";
+import img115 from "./00-img/图1-1-5.webp";
+
+# 移动端1.5
+
+下文中所解析文件前方均以"--"代替，PC端为
+`{根目录下/com.StefMorojna.SpaceflightSimulator}`
+`{/storage/emulated/0/Android/data/com.StefMorojna.SpaceflightSimulator/}`
+
+## 自定义语言包 / Custom Translations
+
+  <div class="img-screen imgT">
+    <img src={img112} alt="图1-1-2" />
+    <p>▲1-1-2</p>
+  </div>
+
+  <div class="img-screen">
+    <img src={img111} alt="图1-1-1" />
+    <p>▲1-1-1</p>
+  </div>
+
+此为语言包所导入目录。当从QQ等获得语言包后，将语言包导入此文件夹后，游戏设置内语言选项中即可选择所导入语言包。
+
+### 导入语言包
+
+  **①下面以MT文件管理器为操作软件，从QQ获得语言包举例导入。（图1-1-1）**
+
+  1. 下载好语言包后，在其中一个窗口内逐条/粘贴打开QQ下载文件储存目录
+  `/storage/emulated/0/Android/data/com.tencent.mobileqq/Tencent/QQfile_recv/`
+  另一个窗口打开 `--files/Custom Translations`
+
+  <blockquote class="tip">※ 请检查：导入该目录文件下的语言包必须为.txt文件才能正常运行。语言的更改可能需要先切换回原版英文后再切换为所需语言包，部分版本需选好语言包后退出游戏重进。</blockquote>
+
+  2. 长按语言包，选择"**移动-＞**"。
+
+  <div style={{clear: 'both'}}></div>
+
+  <div class="img-screen">
+    <img src={img113} alt="图1-1-3 前后缀效果展示" />
+    <p>▲1-1-3</p>
+    <blockquote class="tip">※ 此为HTML格式，前缀与后缀单独出现时无法改变字号或颜色，且前/后缀会出现在文本中。若需同时更改多项设置，以文本内容为对称轴，前后缀必须成对称关系，若顺序颠倒，全局文本中的前后缀将无法正确识别而出现在文本中。游戏内可输入文本（如火箭名称）会出现字符串数量限制，因此有可能无法在游戏内改变其字体。</blockquote>
+  </div>
+
+ **② 如何自己制作一个语言包**
+
+  其中的 `Example.txt` 为当前游戏版本的语言翻译，其内的各项内容对照可直接打开已经做好的语言包查看。也可自行对照翻译。将等号右边的英文替换为所需翻译语种并保存后，一个语言包就做好了。（图1-1-2）
+  对于可输入文本，在文字前方和后方加入前后缀可改变字体颜色和大小。这里给出规律和示例：（图1-1-3）
+
+  - 前缀格式：`<Size=m>;<color=M>;<i>`
+  - 相应后缀：`</size>;</color>;</i>`
+
+   其中：
+   - `<size=m>` 的作用是改变字号，`m` 为数字，含义为字号；
+
+   - `<color=M>` 的作用是改变字体颜色，`M` 为颜色所对应的英文，如 `red`；
+   - `<i>` 的作用是使字体倾斜。
+
+
+
+## files/Saving/Settings
+
+本节解析 `--files/Saving/Settings/` 路径下的配置文件。
+
+### AudioSettings.txt
+
+此文件存储的是全局音频设置，格式为：
+
+<pre><code>
+ &#123;
+  "soundVolume": 1.0,
+  "musicVolume": 1.0
+ &#125;
+</code></pre>
+
+- soundVolume：音效大小，取值范围为[0,1]，改动为大于1时等效为1，小于0时等效为0；
+- musicVolume：音乐大小，取值范围为[0,1]，改动同soundVolume。
+
+### LanguageSettings.txt
+
+此文件存储的是全局语言设置，格式为：
+
+<pre><code>
+ &#123;
+  "name": "1.5.10.2汉化by暝翮",
+  "custom": true
+ &#125;
+</code></pre>
+
+- name：正在应用的语言包名称；
+- custom：语言包来源，true为本地语言包，false为预制语言包。
+
+### VideoSettings.txt
+
+此文件内存储的是画面设置，格式为：
+
+<pre><code>
+ &#123;
+  "freeOrientation": false,
+  "fps": 144,
+  "menuScale": 0.74999994,
+  "menuOpacity": 1.0,
+  "cameraShake": true,
+  "orbitLinesCount": 3,
+  "FXAA": true
+ &#125;
+</code></pre>
+
+- freeOrientation：屏幕旋转：开为true，关为false；
+- fps：帧率：共有30、60、75、90、100、120、144七个级别可选，强行改动为非可选帧率将被重置为30；
+- menuScale：UI（界面）尺寸：取值范围为[0,1]，改动为大于1时等效为1，小于0时等效为0；
+- menuOpacity：UI（界面）不透明度：取值范围[0,1]，改动同menuScale；
+- cameraShake：屏幕晃动：开为true，关为false；
+- orbitLinesCount：轨道线显示详细程度（数量）：共有3、4、5、6、7、8、9、10七个级别可选，级别越高，轨道显示详细程度越高，改动同menuScale；
+- FAXX：抗锯齿：开为true，关为false。
+
+<blockquote class="tip">※ 若从文件内更改设置，应用所改设置需重启游戏。对于拖条设置，如果被改为非预设值将会被重置为初始值。</blockquote>
+
+## files/Saving/Worlds/保存的世界
+
+### BlueprintPersistent/Blueprint.txt
+
+此文件为当前世界中在建蓝图的数据，其数据修改和其余的 `{Blueprint}` 相同，在后面的章节中会介绍其性质。
+
+### Persistent & Quicksaves & RevertLaunch & Backup
+
+这四个文件夹中子目录为相同性质，合并讲解。
+
+#### Achievements.txt
+
+此文件夹内储存的是航天器所达到的成就，其格式为：
+
+`[{"type": a,"value": b,"planet": X},{"type": m,"value": n,"planet": Y}]`
+
+其中：type为成就类型，value为其相关值，planet为成就完成所在对象，如Moon。下划线部分为部分成就所特有，例如：环绕轨道，当成就类型为与所在地无关的类型时，下划线部分将不会出现。以上示例为两个成就，其为基本格式，用","隔开，此存储的是全局航天器所完成成就，多个航天器所完成成就不重复计入。
+
+#### Branches.txt
+
+此文件内存储的是航天器日志。
+
+<div class="img-screen">
+  <img src={img114} alt="图1-1-4 科技树" />
+  <p>▲1-1-4</p>
+</div>
+
+#### CareerState.txt
+
+此文件内存储的是生涯模式中解锁的科技，其完整格式为：
+
+`{"funds":25.0,"unlocked_Parts":["HeatShield_0_0","EngineValiant_0_0"],"unlocked_Upgrades":["Staging","Side Boosters 1","Liquids 1","Powerful Rocketry","Landing"]}`
+
+其中，"funds"为资金，单位为百万。
+
+图1-1-4为解锁部件(unlocked_Parts)与解锁升级(unlocked_Upgrades)所对应的游戏科技树节点。
+
+#### Challenges.txt
+
+此文件内存储的是世界全局所达成的挑战。其格式为：
+
+`["Liftoff_0","Reach_10km","Reach_30km","Reach_Orbit"]`
+
+其中内容为英文原文的挑战名称，以","分隔，拓展星球的挑战内容自动生成。
+
+<div class="img-screen">
+  <img src={img115} alt="图1-1-5 示例火箭" />
+  <p>▲1-1-5</p>
+</div>
+
+#### Rockets.txt
+
+此文件内存储的是世界中现有的火箭数据。这里以图1-1-5火箭举例，零件摆放顺序为依次从上至下，当引擎关闭，节流阀关闭，并调节至80%，快捷栏内容如图所示。
+
+其内容为：
+
+`[{"rocketName":"","location":{"address":"Earth","position":{"x":364.9998779296875,"y":630031.353647232},"velocity":{"x":-7.0054784195860975E-09,"y":5.7948881249103579E-09}},"rotation":359.97644,"angularVelocity":7.73473E-08,"throttleOn":false,"throttlePercent":0.802944541,"RCS":false,"parts":[...],"joints":[...],"stages":[...],"staging_EditMode":false,"branch":0}]`
+
+其中：
+
+- rocketName：当前分节所记录造物的名称；
+- location：该造物所在的位置：
+  - address：所处引力范围的星球
+  - position：具体位置，以所处引力范围的星球中心为原点建立平面直角坐标系：
+    - x：造物于x轴上对应的坐标
+    - y：造物与y轴上对应的坐标
+- velocity：沿当前轨道的速度：
+  - x：造物于x轴方向上的分速度
+  - y：造物于y轴方向上的分速度
+  <blockquote class="tip">游戏中速度表中的速度为这两个速度的矢量和。</blockquote>
+- rotation：该造物的角度（以逆时针方向计）；
+- angularVelocity：该造物旋转的速度，其单位为°/s（度每秒）（以逆时针方向计，负数的旋转方向为顺时针）；
+- throttleOn：节流阀开关状态，开为true，关为false；
+- throttlePercent：节流阀阀门大小，正常取值范围为[0,1]；
+- RCS：单元推进系统开关状态，开为true，关为false；
+- parts：该造物的零件组成，其内部格式同blueprint，此处略过；
+- joints：链接顺序，其中a为父节点，b为子节点，为树状链接顺序（其内序号为上文中parts中的零件对应出现顺序）；
+- stages：该造物快捷栏内所含部件，其中stageld为快捷栏顺序，partlndexes为该级快捷栏所含部件（其内序号为上文中parts中的零件对应出现顺序）；
+- staging_EditMode：快捷栏编辑状态，开为true，关为false；
+- branch：索引至branch中该造物对应日志。
+
+<blockquote class="tip"> ※ 最外层的方括号"[]"为数组引用，内部第一层花括号"{}"为造物对象，各层花括号用英文的逗号","链接。因此，当需转移/导入造物时，请注意格式应为：`[{ }, { }, ...]`</blockquote>
+
+#### version.txt
+
+该存档的版本号（只可从低版本迁移至高版本）。
+
+#### WorldState.txt
+
+此文件内存储的为世界内状态，其格式为：
+
+`{"worldTime":1000229.3015892979,"timewarpPhase":0,"mapView":false,"mapPosition":{"x":365.02282507980334,"y":630026.09425703716,"z":409516.96126707416},"mapAddress":"Planet:Earth","targetAddress":"null","playerAddress":"Rocket:0","cameraDistance":12.0}`
+
+其中：
+
+- worldTime：发射运行时间，起始值为1000000.0，在蓝图界面点击发射加载完成后，每过一秒这个值加1（若时间加速，按加速后时间计入）；
+- timewarpPhase：时间加速阶级。时间加速度阶级最高为464（共465个阶级），加速度阶级递增不包括阶级0~2（阶级0、1、2，分别为1x、2x、3x）的时间加速与阶级关系为：n为阶级数，w＝n-2（3≤n≤464），T为时间加速度，运算#w/3#表示计算w/3后结果向下取整：`T=5^w-#w/3#^*4^#w/3#^`。在游戏内可达到的加速上限阈值与星系内最大公转周期相关，星系内最大公转周期星球公转周期越大，可在游戏内直接达到的时间加速也就越大。其关系为：n定义同上，a为最大周期星球的长半轴，g为其中心天体的重力加速度，r为其中心天体的半径：`n={㏒₄.₇₂√[4π^2a^3/(576gr^2)]}+2`，计算结果向下取整。（由于浮点运算与向下取整，计算结果和实际情况有小于千分之五的概率出现阶层误差）。时间加速通过直接修改文件可以突破阈值限制，且修改后可自由调节（当加速度低于上限阈值后需重新修改）。当加速度达到5x10^18（5E+18，第31个阶级）前后，云层转动将停止，达到5x10^38（5E+38，第61个阶级）后，星球将会因为轨道计算错误而堆叠在一起，当加速度超过第464个阶级（1x10^308（1E+308））后，加速度将变为Infinity，此时worldTime时间戳计算将错误，变为NaN；
+- mapView：地图视角开关状态，开为true，关为false；
+- mapPosition：地图视角设置，坐标系以mapAddress中的目标为原点，xy轴单位为m；z为地图镜头距离（值越大视野越大），游戏内视角缩放上限与星系大小相关；
+- mapAddress：地图视角相对参考系，表现为视野跟随，目标可以是造物；
+- targetAddress：导航目标，目标名称为选中星系名称或造物序号（日志序号），null为无目标；
+- playerAddress：当前控制的造物序号（日志序号）；
+- cameraDistance：镜头距离（值越大视野越大），游戏内缩放上限与星系大小相关。
+
+### WorldSettings.txt
+
+此文件存储的是当前存档的全局设置，一个新建原版太阳系存档的格式为：
+
+`{"solarSystem":{"name":""},"mode":{"mode":0,"allowQuicksaves":true},"difficulty":{"difficulty":0},"playtime":{"lastPlayedTime_Ticks":638824955182065480,"totalPlayTime_Seconds":10.0},"cheats":{"infiniteFuel":false,"noAtmosphericDrag":false,"unbreakableParts":false,"noGravity":false,"noHeatDamage":false,"noBurnMarks":false,"infiniteBuildArea":false,"partClipping":false}}`
+
+其中：
+
+- solarSystem：存档所用拓展包，当无名称时为默认太阳系。
+- mode：游戏模式。
+  - mode：0为经典模式（常规模式）；1为生涯模式（需要解锁科技树，无法作弊、改文件）；2为沙盒模式（与经典模式的区别在于多了固推）；≥3为挑战模式（与经典模式的区别在于无法作弊）。
+  <blockquote class="tip"> ※ 每个版本拥有的模式不尽相同，若对应数字不是对应模式，则说明当前版本不存在对应的模式，数值大于当前版本最大模式有效值时，认为其为最大有效值对应的模式。生涯模式与挑战模式可以通过修改本文件的方式获得作弊，但是游戏模式将强制改为经典模式，固推将会保留，但在重进游戏后消失。部分版本可在创建世界时选择挑战模式，生涯模式需在创建世界时将世界命名为Test Career或在本文件内修改调出，沙盒模式仅可在本文件内修改调出。</blockquote>
+  - allowQuicksaves：快速存档设定，true为允许存档，false为禁止。
+- difficulty：难度设定。0为normal（普通），1为hard（困难），2在PC中为RSS（真实太阳系），但在1.5.10.5以下的移动端中，大于等于2的数字为普通。
+- playtime：
+  - lastPlayedTime_Ticks：距离上次游玩时间，单位为tick（1s＝1x10^7 tick）。数值为上次退出游戏时记录的系统时间。
+  - totalPlayTime_seconds：总游玩时间，单位为秒，初始值为0。
+- cheats：作弊开关状态，开均为true，关均为false。
+  - infiniteFuel：无限燃料；
+  - noHeatDamage：无热效应伤害；
+  - noAtmosphericDrag：无大气阻力；
+  - noBurnMarks：无烧蚀痕迹；
+  - unbreakableParts：牢不可破的部件；
+  - infiniteBuildArea：无限的建造区域；
+  - noGravity：无重力；
+  - partClipping：部件堆叠。
