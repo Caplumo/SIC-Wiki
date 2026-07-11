@@ -260,7 +260,7 @@ body::after {
   }
 }
 /*搜索栏*/
-.navbar__search-input.searchInput_YFbd.input_FOTf {
+.navbar__search-input {
   border: 1px solid var(--line);
   border-radius: 20px;
   background-color: var(--pad);

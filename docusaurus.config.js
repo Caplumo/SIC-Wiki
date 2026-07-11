@@ -119,6 +119,9 @@ const config = {
           hideable: true,
         },
       },
+      scripts: [
+        '/js/custom.js',
+      ],
     }),
 };
 
