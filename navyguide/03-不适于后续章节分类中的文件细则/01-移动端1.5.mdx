@@ -6,7 +6,7 @@ import img115 from './00-img/图1-1-5.webp';
 
 # 移动端1.5
 
-下文中所解析文件前方均以"--"代替，PC端为
+下文中所解析文件前方均以"--"代替，PC端为<br />
 `{根目录下/com.StefMorojna.SpaceflightSimulator}`
 `{/storage/emulated/0/Android/data/com.StefMorojna.SpaceflightSimulator/}`
 
@@ -74,7 +74,10 @@ import img115 from './00-img/图1-1-5.webp';
 此文件存储的是全局音频设置，格式为：
 
 <pre>
-  <code>&#123; "soundVolume": 1.0, "musicVolume": 1.0 &#125;</code>
+  <code>&#123;</code>
+  <code>  "soundVolume": 1.0,</code>
+  <code>  "musicVolume": 1.0</code>
+  <code>&#125;</code>
 </pre>
 
 - soundVolume：音效大小，取值范围为[0,1]，改动为大于1时等效为1，小于0时等效为0；
@@ -85,7 +88,10 @@ import img115 from './00-img/图1-1-5.webp';
 此文件存储的是全局语言设置，格式为：
 
 <pre>
-  <code>&#123; "name": "1.5.10.2汉化by暝翮", "custom": true &#125;</code>
+  <code>&#123;</code>
+  <code>  "name": "1.5.10.2汉化by暝翮",</code>
+  <code>  "custom": true</code>
+  <code>&#125;</code>
 </pre>
 
 - name：正在应用的语言包名称；
@@ -96,9 +102,15 @@ import img115 from './00-img/图1-1-5.webp';
 此文件内存储的是画面设置，格式为：
 
 <pre>
-  <code>&#123; "freeOrientation": false, "fps": 144, "menuScale": 0.74999994,</code><br />
-  <code>  "menuOpacity": 1.0, "cameraShake": true, "orbitLinesCount": 3, "FXAA": true</code><br />
-  <code>&#125;</code><br />
+  <code>&#123;</code>
+  <code>  "freeOrientation": false,</code>
+  <code>  "fps": 144,</code>
+  <code>  "menuScale": 0.74999994,</code>
+  <code>  "menuOpacity": 1.0,</code>
+  <code>  "cameraShake": true,</code>
+  <code>  "orbitLinesCount": 3,</code>
+  <code>  "FXAA": true</code>
+  <code>&#125;</code>
 </pre>
 
 - freeOrientation：屏幕旋转：开为true，关为false；
@@ -128,7 +140,9 @@ import img115 from './00-img/图1-1-5.webp';
 
 此文件夹内储存的是航天器所达到的成就，其格式为：
 
-`[{"type": a,"value": b,"planet": X},{"type": m,"value": n,"planet": Y}]`
+<pre>
+  <code>[&#123;"type": a,"value": b,"planet": X$#125;,$#123;"type": m,"value": n,"planet": Y%#125;]</code>
+</pre>
 
 其中：type为成就类型，value为其相关值，planet为成就完成所在对象，如Moon。下划线部分为部分成就所特有，例如：环绕轨道，当成就类型为与所在地无关的类型时，下划线部分将不会出现。以上示例为两个成就，其为基本格式，用","隔开，此存储的是全局航天器所完成成就，多个航天器所完成成就不重复计入。
 
@@ -145,7 +159,9 @@ import img115 from './00-img/图1-1-5.webp';
 
 此文件内存储的是生涯模式中解锁的科技，其完整格式为：
 
-`{"funds":25.0,"unlocked_Parts":["HeatShield_0_0","EngineValiant_0_0"],"unlocked_Upgrades":["Staging","Side Boosters 1","Liquids 1","Powerful Rocketry","Landing"]}`
+<pre>
+  <code>&#123;"funds":25.0,"unlocked_Parts":["HeatShield_0_0","EngineValiant_0_0"],"unlocked_Upgrades":["Staging","Side Boosters 1","Liquids 1","Powerful Rocketry","Landing"]&#125;</code>
+</pre>
 
 其中，"funds"为资金，单位为百万。
 
@@ -155,7 +171,9 @@ import img115 from './00-img/图1-1-5.webp';
 
 此文件内存储的是世界全局所达成的挑战。其格式为：
 
-`["Liftoff_0","Reach_10km","Reach_30km","Reach_Orbit"]`
+<pre>
+  <code>["Liftoff_0","Reach_10km","Reach_30km","Reach_Orbit"]</code>
+</pre>
 
 其中内容为英文原文的挑战名称，以","分隔，拓展星球的挑战内容自动生成。
 
@@ -170,7 +188,9 @@ import img115 from './00-img/图1-1-5.webp';
 
 其内容为：
 
-`[{"rocketName":"","location":{"address":"Earth","position":{"x":364.9998779296875,"y":630031.353647232},"velocity":{"x":-7.0054784195860975E-09,"y":5.7948881249103579E-09}},"rotation":359.97644,"angularVelocity":7.73473E-08,"throttleOn":false,"throttlePercent":0.802944541,"RCS":false,"parts":[...],"joints":[...],"stages":[...],"staging_EditMode":false,"branch":0}]`
+<pre>
+  <code>[&#123;"rocketName":"","location":&#123;"address":"Earth","position":&#123;"x":364.9998779296875,"y":630031.353647232&#125;&#125;,"velocity":&#123;"x":-7.0054784195860975E-09,"y":5.7948881249103579E-09&#125;,"rotation":359.97644,"angularVelocity":7.73473E-08,"throttleOn":false,"throttlePercent":0.802944541,"RCS":false,"parts":[...],"joints":[...],"stages":[...],"staging_EditMode":false,"branch":0&#125;]</code>
+</pre>
 
 其中：
 
@@ -199,8 +219,8 @@ import img115 from './00-img/图1-1-5.webp';
 
 <blockquote class='tip'>
   {' '}
-  ※ 最外层的方括号"[]"为数组引用，内部第一层花括号"{}
-  "为造物对象，各层花括号用英文的逗号","链接。因此，当需转移/导入造物时，请注意格式应为：`[
+  ※ 最外层的方括号"[ ]"为数组引用，内部第一层花括号"&#123; &#125;"
+  为造物对象，各层花括号用英文的逗号","链接。因此，当需转移/导入造物时，请注意格式应为：`[
   {}, {}, ...]`
 </blockquote>
 
@@ -212,7 +232,9 @@ import img115 from './00-img/图1-1-5.webp';
 
 此文件内存储的为世界内状态，其格式为：
 
-`{"worldTime":1000229.3015892979,"timewarpPhase":0,"mapView":false,"mapPosition":{"x":365.02282507980334,"y":630026.09425703716,"z":409516.96126707416},"mapAddress":"Planet:Earth","targetAddress":"null","playerAddress":"Rocket:0","cameraDistance":12.0}`
+<pre>
+  <code>&#123;"worldTime":1000229.3015892979,"timewarpPhase":0,"mapView":false,"mapPosition":&#123;"x":365.02282507980334,"y":630026.09425703716,"z":409516.96126707416&#125;,"mapAddress":"Planet:Earth","targetAddress":"null","playerAddress":"Rocket:0","cameraDistance":12.0&#125;</code>
+</pre>
 
 其中：
 
@@ -229,7 +251,9 @@ import img115 from './00-img/图1-1-5.webp';
 
 此文件存储的是当前存档的全局设置，一个新建原版太阳系存档的格式为：
 
-`{"solarSystem":{"name":""},"mode":{"mode":0,"allowQuicksaves":true},"difficulty":{"difficulty":0},"playtime":{"lastPlayedTime_Ticks":638824955182065480,"totalPlayTime_Seconds":10.0},"cheats":{"infiniteFuel":false,"noAtmosphericDrag":false,"unbreakableParts":false,"noGravity":false,"noHeatDamage":false,"noBurnMarks":false,"infiniteBuildArea":false,"partClipping":false}}`
+<pre>
+  <code>&#123;"solarSystem":&#123;"name":""&#125;,"mode":&#123;"mode":0,"allowQuicksaves":true&#125;,"difficulty":&#123;"difficulty":0&#125;,"playtime":&#123;"lastPlayedTime_Ticks":638824955182065480,"totalPlayTime_Seconds":10.0&#125;,"cheats":&#123;"infiniteFuel":false,"noAtmosphericDrag":false,"unbreakableParts":false,"noGravity":false,"noHeatDamage":false,"noBurnMarks":false,"infiniteBuildArea":false,"partClipping":false&#125;&#125;</code>
+</pre>
 
 其中：
 
