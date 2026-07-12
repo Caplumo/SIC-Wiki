@@ -1,14 +1,11 @@
 // @ts-check
 import { themes as prismThemes } from 'prism-react-renderer';
 
-const isDev = process.env.NODE_ENV === 'development';
-const baseUrl = isDev ? 'http://localhost:3000/' : '/';
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'SIC Wiki',
   tagline: 'Space Flight Simulator 社区攻略站',
-  favicon: `${baseUrl}img/top.png`,
+  favicon: 'img/top.png',
   future: {
     v4: true,
   },
@@ -21,7 +18,7 @@ const config = {
 
   onBrokenLinks: 'throw',
 
-  scripts: [`${baseUrl}js/custom.js`],
+  clientModules: ['./src/js/custom.js'],
 
   i18n: {
     defaultLocale: 'zh-Hans',
@@ -89,7 +86,7 @@ const config = {
         title: 'SIC主页',
         logo: {
           alt: 'SIC Wiki Logo',
-          src: `${baseUrl}img/topic.png`,
+          src: 'img/topic.png',
         },
         items: [
           {
