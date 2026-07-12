@@ -9,7 +9,6 @@ const config = {
   title: 'SIC Wiki',
   tagline: 'Space Flight Simulator 社区攻略站',
   favicon: `${baseUrl}img/top.png`,
-
   future: {
     v4: true,
   },
@@ -21,6 +20,8 @@ const config = {
   projectName: 'SIC-Wiki',
 
   onBrokenLinks: 'throw',
+
+  scripts: [`${baseUrl}js/custom.js`],
 
   i18n: {
     defaultLocale: 'zh-Hans',
@@ -119,9 +120,6 @@ const config = {
           hideable: true,
         },
       },
-      scripts: [
-        '/js/custom.js',
-      ],
     }),
 };
 
