@@ -35,10 +35,6 @@
   --cover: rgba(0, 0, 0, 0.7);
   --bg-image: url('/img/bg.webp');
 }
-
-.navbar-sidebar__backdrop {
-  background-color: var(--null);
-}
 /*暗主题*/
 
 /*ifm原生变量覆盖*/
@@ -57,7 +53,7 @@
   }
 }
 
-/*背景图遮罩+变暗清除*/
+/*背景图遮罩+侧边栏展开变暗清除*/
 body::before {
   content: '';
   position: fixed;
@@ -68,6 +64,10 @@ body::before {
   background-color: var(--cover);
   pointer-events: none;
   z-index: -1;
+}
+
+.navbar-sidebar__backdrop {
+  background-color: var(--null);
 }
 
 /*导航栏，侧边栏，页内导航栏，页脚样式*/
@@ -141,6 +141,7 @@ blockquote,
 code,
 .DocSearch-Button-Placeholder {
   color: var(--tips);
+  border: 1px solid var(--line);
 }
 
 code,
@@ -148,7 +149,6 @@ blockquote,
 .menu__caret,
 .DocSearch-Button {
   background-color: var(--pad);
-  isolation: isolate;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -178,25 +178,33 @@ blockquote {
   border-left: 4px solid var(--line);
   border-radius: 3px;
   overflow: auto;
+  max-width: fit-content;
+}
+
+code {
+  border-radius: 0px;
+  border-left: 0px solid var(--line);
+  border-right: 0px solid var(--line);
+  max-width: fit-content;
 }
 
 pre {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
   margin: 0;
   padding: 0.3rem;
   border: 1px solid var(--line);
-  width: fit-content;
+  white-space: pre-wrap;
+  word-break: break-word;
+  display: flow-root;
+  overflow: auto;
+  max-width: fit-content;
 }
 
-pre code {
+pre code,
+blockquote code {
   background-color: var(--null);
+  border: none;
   backdrop-filter: none;
-  white-space: pre-wrap;
   max-width: 100%;
-  flex-wrap: wrap;
-  word-break: break-word;
 }
 
 /* 图片控制 */
