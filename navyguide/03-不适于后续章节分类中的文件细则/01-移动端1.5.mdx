@@ -12,12 +12,12 @@ import img115 from './00-img/图1-1-5.webp';
 
 ## 自定义语言包 / Custom Translations
 
-<div class='img-screen imgT'>
+<div className='img-screen imgT'>
   <img src={img112} alt='图1-1-2' />
   <p>▲1-1-2</p>
 </div>
 
-<div class='img-screen'>
+<div className='img-screen'>
   <img src={img111} alt='图1-1-1' />
   <p>▲1-1-1</p>
 </div>
@@ -33,7 +33,7 @@ import img115 from './00-img/图1-1-5.webp';
   另一个窗口打开 
   <br />`--files/Custom Translations`
 
-<blockquote class='tip'>
+<blockquote className='tip'>
   ※
   请检查：导入该目录文件下的语言包必须为.txt文件才能正常运行。语言的更改可能需要先切换回原版英文后再切换为所需语言包，部分版本需选好语言包后退出游戏重进。
 </blockquote>
@@ -42,10 +42,10 @@ import img115 from './00-img/图1-1-5.webp';
 
 <div style={{ clear: 'both' }}></div>
 
-<div class='img-screen'>
+<div className='img-screen'>
   <img src={img113} alt='图1-1-3 前后缀效果展示' />
   <p>▲1-1-3</p>
-  <blockquote class='tip'>
+  <blockquote className='tip'>
     ※
     此为HTML格式，前缀与后缀单独出现时无法改变字号或颜色，且前/后缀会出现在文本中。若需同时更改多项设置，以文本内容为对称轴，前后缀必须成对称关系，若顺序颠倒，全局文本中的前后缀将无法正确识别而出现在文本中。游戏内可输入文本（如火箭名称）会出现字符串数量限制，因此有可能无法在游戏内改变其字体。
   </blockquote>
@@ -104,14 +104,14 @@ import img115 from './00-img/图1-1-5.webp';
 
 <pre>
   <code>&#123;</code>
-  <code>  "freeOrientation": false,</code>
-  <code>  "fps": 144,</code>
-  <code>  "menuScale": 0.74999994,</code>
-  <code>  "menuOpacity": 1.0,</code>
-  <code>  "cameraShake": true,</code>
-  <code>  "orbitLinesCount": 3,</code>
-  <code>  "FXAA": true</code>
-  <code>&#125;</code>
+  <br /><code>  "freeOrientation": false,</code>
+  <br /><code>  "fps": 144,</code>
+  <br /><code>  "menuScale": 0.74999994,</code>
+  <br /><code>  "menuOpacity": 1.0,</code>
+  <br /><code>  "cameraShake": true,</code>
+  <br /><code>  "orbitLinesCount": 3,</code>
+  <br /><code>  "FXAA": true</code>
+  <br /><code>&#125;</code>
 </pre>
 
 - freeOrientation：屏幕旋转：开为true，关为false；
@@ -122,7 +122,7 @@ import img115 from './00-img/图1-1-5.webp';
 - orbitLinesCount：轨道线显示详细程度（数量）：共有3、4、5、6、7、8、9、10七个级别可选，级别越高，轨道显示详细程度越高，改动同menuScale；
 - FAXX：抗锯齿：开为true，关为false。
 
-<blockquote class='tip'>
+<blockquote className='tip'>
   ※
   若从文件内更改设置，应用所改设置需重启游戏。对于拖条设置，如果被改为非预设值将会被重置为初始值。
 </blockquote>
@@ -142,7 +142,7 @@ import img115 from './00-img/图1-1-5.webp';
 此文件夹内储存的是航天器所达到的成就，其格式为：
 
 <pre>
-  <code>[&#123;"type": a,"value": b,"planet": X$#125;,$#123;"type": m,"value": n,"planet": Y%#125;]</code>
+  <code>[&#123;"type": a,"value": b,"planet": X&#125;,&#123;"type": m,"value": n,"planet": Y&#125;]</code>
 </pre>
 
 其中：type为成就类型，value为其相关值，planet为成就完成所在对象，如Moon。下划线部分为部分成就所特有，例如：环绕轨道，当成就类型为与所在地无关的类型时，下划线部分将不会出现。以上示例为两个成就，其为基本格式，用","隔开，此存储的是全局航天器所完成成就，多个航天器所完成成就不重复计入。
@@ -151,7 +151,7 @@ import img115 from './00-img/图1-1-5.webp';
 
 此文件内存储的是航天器日志。
 
-<div class='img-screen'>
+<div className='img-screen'>
   <img src={img114} alt='图1-1-4 科技树' />
   <p>▲1-1-4</p>
 </div>
@@ -178,7 +178,7 @@ import img115 from './00-img/图1-1-5.webp';
 
 其中内容为英文原文的挑战名称，以","分隔，拓展星球的挑战内容自动生成。
 
-<div class='img-screen'>
+<div className='img-screen'>
   <img src={img115} alt='图1-1-5 示例火箭' />
   <p>▲1-1-5</p>
 </div>
@@ -204,7 +204,7 @@ import img115 from './00-img/图1-1-5.webp';
 - velocity：沿当前轨道的速度：
   - x：造物于x轴方向上的分速度
   - y：造物于y轴方向上的分速度
-    <blockquote class='tip'>
+    <blockquote className='tip'>
       游戏中速度表中的速度为这两个速度的矢量和。
     </blockquote>
 - rotation：该造物的角度（以逆时针方向计）；
@@ -218,7 +218,7 @@ import img115 from './00-img/图1-1-5.webp';
 - staging_EditMode：快捷栏编辑状态，开为true，关为false；
 - branch：索引至branch中该造物对应日志。
 
-<blockquote class='tip'>
+<blockquote className='tip'>
   {' '}
   ※ 最外层的方括号"[ ]"为数组引用，内部第一层花括号"&#123; &#125;"
   为造物对象，各层花括号用英文的逗号","链接。因此，当需转移/导入造物时，请注意格式应为：`[
@@ -261,7 +261,7 @@ import img115 from './00-img/图1-1-5.webp';
 - solarSystem：存档所用拓展包，当无名称时为默认太阳系。
 - mode：游戏模式。
   - mode：0为经典模式（常规模式）；1为生涯模式（需要解锁科技树，无法作弊、改文件）；2为沙盒模式（与经典模式的区别在于多了固推）；≥3为挑战模式（与经典模式的区别在于无法作弊）。
-    <blockquote class='tip'>
+    <blockquote className='tip'>
       {' '}
       ※
       每个版本拥有的模式不尽相同，若对应数字不是对应模式，则说明当前版本不存在对应的模式，数值大于当前版本最大模式有效值时，认为其为最大有效值对应的模式。生涯模式与挑战模式可以通过修改本文件的方式获得作弊，但是游戏模式将强制改为经典模式，固推将会保留，但在重进游戏后消失。部分版本可在创建世界时选择挑战模式，生涯模式需在创建世界时将世界命名为Test
