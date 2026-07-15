@@ -8,9 +8,9 @@
   --line: #216658;
   --bg: rgb(235, 240, 240);
   --link: #004ab8;
-  --cover: rgba(255, 255, 255, 0.6);
+  --cover: rgba(238, 234, 212, 0.6);
   --null: #00000000;
-  --bg-image: url('/img/bgd.webp');
+  --bg-image: url('/img/bg.webp');
   --ifm-code-font-size: 95%;
   --doc-sidebar-width: 300px;
   --head-height: 49px;
@@ -33,7 +33,7 @@
   --bg: rgb(30, 30, 30);
   --link: #1969e1;
   --cover: rgba(0, 0, 0, 0.7);
-  --bg-image: url('/img/bg.webp');
+  --bg-image: url('/img/bg-dark.webp');
 }
 /*暗主题*/
 
@@ -45,6 +45,16 @@
 }
 
 /*动画管理*/
+/*关键帧动画*/
+
+/*表达式*/
+[class^='img-'] img {
+  transition: transform 0.4s ease;
+}
+
+[class^='img-'] img:hover {
+  transform: scale(1.03);
+}
 
 /*背景图遮罩+侧边栏展开变暗清除*/
 body::before {
@@ -106,6 +116,7 @@ body::after {
 }
 
 /*导航栏，侧边栏，页内导航栏，页脚样式*/
+/*导航栏*/
 .navbar {
   background-color: var(--bg);
   border: 1px solid var(--line);
@@ -114,28 +125,42 @@ body::after {
   white-space: nowrap;
 }
 
+[data-theme='dark'] .navbar__logo img {
+  content: url('/img/topic-dark.png');
+}
+/*侧边栏*/
 .theme-doc-sidebar-container {
+  margin: 0;
   background-color: var(--null);
   border: 1px solid var(--line);
-  padding: calc(var(--head-height) + 1px) 0 0 0;
+  border-bottom: 0;
   backdrop-filter: blur(2px);
+  max-height: fit-content;
+}
+
+.sidebarViewport_aRkj,
+.sidebar_njMd {
+  margin: 0;
+  padding: 0;
 }
 
 .theme-layout-navbar-sidebar-panel,
 .theme-layout-navbar-sidebar.navbar-sidebar {
   background-color: var(--null);
   border: 1px solid var(--line);
+  border-bottom: 0;
   backdrop-filter: blur(12px);
 }
-
+/*页内导航栏*/
 .table-of-contents {
   background-color: var(--pad);
   border-left: 3px solid var(--line);
   backdrop-filter: blur(2px);
 }
-
+/*页脚*/
 .footer {
   height: 50px;
+  border: 1px solid var(--line);
   background-color: rgba(50, 50, 50, 0.1);
   backdrop-filter: blur(2px);
   vertical-align: top;
@@ -253,12 +278,13 @@ h2 {
 
 h3 {
   text-align: center;
-  border-top: 2px dashed var(--line);
+  border-top: 1px solid var(--line);
   counter-reset: h4-counter;
 }
 
 h4 {
-  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  max-width: fit-content;
 }
 
 h5,
