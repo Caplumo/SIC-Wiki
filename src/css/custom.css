@@ -36,7 +36,6 @@
   --bg-image: url('/img/bg-dark.webp');
 }
 /*暗主题*/
-
 /*ifm原生变量覆盖*/
 /*颜色*/
 :root {
@@ -130,9 +129,16 @@ body::after {
 }
 /*侧边栏*/
 .theme-doc-sidebar-container {
+  position: sticky;
+  top: var(--head-height);
+  left: 8px;
+  height: calc(100vh - var(--head-height));
+  overflow-y: auto;
+  overflow-x: hidden;
   margin: 0;
   background-color: var(--null);
   border: 1px solid var(--line);
+  border-top: 0;
   border-bottom: 0;
   backdrop-filter: blur(2px);
   max-height: fit-content;
@@ -150,6 +156,11 @@ body::after {
   border: 1px solid var(--line);
   border-bottom: 0;
   backdrop-filter: blur(12px);
+}
+
+.button.button--secondary.button--outline.collapseSidebarButton_PEFL {
+  border-top: 1px solid var(--line);
+  border-left: none;
 }
 /*页内导航栏*/
 .table-of-contents {
@@ -253,6 +264,7 @@ pre {
   margin: 0;
   padding: 0.3rem;
   border: 1px solid var(--line);
+  backdrop-filter: blur(2px);
   white-space: pre-wrap;
   word-break: break-word;
   display: flow-root;
@@ -422,4 +434,9 @@ article img {
   .navbar__title.text--truncate {
     display: none;
   }
+}
+
+/*给他妈的傻逼Chromium系擦屁股口牙！*/
+.is-chromium * {
+  backdrop-filter: none !important;
 }

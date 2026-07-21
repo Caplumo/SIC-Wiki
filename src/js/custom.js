@@ -1,4 +1,18 @@
 if (typeof window !== 'undefined') {
+  // 给他妈的傻逼Chromium系擦屁股口牙！
+  if (/Chrome/.test(navigator.userAgent) && !/Firefox/.test(navigator.userAgent)) {
+    // 用 MutationObserver 监听 html 的 class 变化，Docusaurus 路由切换时会覆盖 class
+    const observer = new MutationObserver(function () {
+      if (!document.documentElement.classList.contains('is-chromium')) {
+        document.documentElement.classList.add('is-chromium');
+      }
+    });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+
+    // 立即添加一次
+    document.documentElement.classList.add('is-chromium');
+  }
+
   window.addEventListener('load', function () {
     // 搜索栏刷新
     const searchInput = document.querySelector('.navbar__search-input');
