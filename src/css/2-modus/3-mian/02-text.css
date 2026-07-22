@@ -1,0 +1,25 @@
+/*---字体颜色---*/
+p,
+li,
+pre,
+tr,
+td,
+th {
+  color: var(--text);
+}
+
+a {
+  color: var(--link);
+}
+
+/*---背景颜色---*/
+table {
+  background: var(--pad);
+}
+
+/*---边线颜色---*/
+table {
+  border-color: var(--line);
+}
+
+/*---样式---*/

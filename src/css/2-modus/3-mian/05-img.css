@@ -1,0 +1,36 @@
+[class^='img-'] {
+  margin: 0 auto;
+  margin-left: 1rem;
+}
+
+[class^='img-'] p,
+[class^='img-'] blockquote {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-size: small;
+  font-weight: 400;
+}
+
+.imgT {
+  margin-left: 0;
+}
+
+.img-screen {
+  width: var(--img-screen);
+  float: right;
+  overflow: visible;
+  aspect-ratio: 45/97;
+}
+
+.img-screen img {
+  aspect-ratio: 45/97;
+  object-fit: cover;
+  object-position: center;
+  border: 0.5px solid var(--line);
+}
+
+.img-screen blockquote {
+  aspect-ratio: 45/20;
+  overflow: auto;
+}

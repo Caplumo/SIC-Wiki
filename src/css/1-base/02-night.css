@@ -1,0 +1,12 @@
+[data-theme='dark'] {
+  --text: #62cccc;
+  --title: #b4d9e3;
+  --important: #4faeee;
+  --tips: #10ce9e;
+  --pad: rgba(35, 35, 35, 0.4);
+  --line: #a0f6e2;
+  --bg: rgb(30, 30, 30);
+  --link: #1969e1;
+  --cover: rgba(0, 0, 0, 0.7);
+  --bg-image: url('/img/bg-dark.webp');
+}

@@ -1,0 +1,28 @@
+/*---字体---*/
+html {
+  font-family:
+    'Microsoft YaHei', '微软雅黑', 'PingFang SC', 'Hiragino Sans GB',
+    'Heiti SC', 'WenQuanYi Micro Hei', sans-serif;
+}
+
+/*---尺寸---*/
+:root {
+  /*图像*/
+  --img-screen: 25%;
+  --img-part: 30%;
+  /*侧栏与头栏*/
+  --doc-sidebar-width: 300px;
+  --head-height: 49px;
+}
+
+/*---通用颜色---*/
+:root {
+  --null: #00000000;
+}
+
+/*=====ifm原生变量覆盖=====*/
+/*---颜色---*/
+:root {
+  --ifm-toc-border-color: var(--line); /*导航栏收起按钮边框，跳转目录边栏颜色*/
+  --ifm-pre-background: var(--pad); /*预制格式背景色*/
+}

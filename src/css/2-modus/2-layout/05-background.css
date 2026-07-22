@@ -1,0 +1,24 @@
+/*---背景图---*/
+.bg-layer {
+  position: fixed;
+  inset: 0;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: -2;
+}
+
+/*---蒙版---*/
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--cover);
+  pointer-events: none;
+  z-index: -1;
+}

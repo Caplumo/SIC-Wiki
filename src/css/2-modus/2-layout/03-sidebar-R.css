@@ -1,0 +1,21 @@
+.col.col--3 {
+  padding: 0;
+}
+
+.table-of-contents {
+  background-color: var(--pad);
+  border-left: 3px solid var(--line);
+  backdrop-filter: blur(2px);
+}
+/*---通用字体颜色设置---*/
+.table-of-contents__link {
+  color: var(--text);
+}
+
+.table-of-contents__link:hover {
+  color: var(--link);
+}
+
+.table-of-contents__link--active {
+  color: var(--important);
+}

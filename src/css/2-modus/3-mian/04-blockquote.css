@@ -1,0 +1,10 @@
+blockquote {
+  color: var(--tips);
+  background-color: var(--pad);
+  backdrop-filter: blur(2px);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--line);
+  border-radius: 3px;
+  overflow: auto;
+  max-width: fit-content;
+}

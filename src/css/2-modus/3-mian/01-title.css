@@ -1,0 +1,46 @@
+h1 {
+  color: var(--important);
+  text-align: center;
+  border: 2px solid var(--line);
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+}
+
+h2 {
+  color: var(--title);
+  text-align: center;
+  border: 2px solid var(--line);
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+h3 {
+  color: var(--title);
+  text-align: center;
+  border-top: 1px solid var(--line);
+  counter-reset: h4-counter;
+}
+
+h4 {
+  color: var(--text);
+  border-bottom: 1px solid var(--line);
+  max-width: fit-content;
+}
+
+h5,
+h6 {
+  color: var(--text);
+  text-align: center;
+}
+
+/*---h3，h4有序前缀---*/
+h3 ~ h4 {
+  counter-increment: h4-counter;
+  counter-reset: h5-counter;
+}
+
+h3 ~ h4::before {
+  content: counter(h4-counter) '、';
+}

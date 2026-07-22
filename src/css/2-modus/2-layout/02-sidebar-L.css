@@ -1,0 +1,42 @@
+/*---桌面导航栏---*/
+.theme-doc-sidebar-container {
+  position: sticky;
+  top: var(--head-height);
+  left: 8px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-top: 0;
+  border-bottom: 0;
+  background-color: var(--null);
+  backdrop-filter: blur(2px);
+  height: calc(100vh - var(--head-height));
+}
+
+.button.button--secondary {
+  border-top: 1px solid var(--line);
+  border-left: none;
+  border-bottom: none;
+}
+/*---移动导航栏---*/
+.theme-layout-navbar-sidebar-panel,
+.theme-layout-navbar-sidebar.navbar-sidebar {
+  background-color: var(--null);
+  border: 1px solid var(--line);
+  border-bottom: none;
+  backdrop-filter: blur(12px);
+}
+/*---通用字体颜色设置---*/
+.menu__link {
+  color: var(--text);
+}
+
+.menu__link:hover {
+  color: var(--link);
+}
+
+.menu__link--active {
+  color: var(--important);
+}

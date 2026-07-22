@@ -1,0 +1,26 @@
+/*---基本设置---*/
+.navbar {
+  background-color: var(--bg);
+  border: 1px solid var(--line);
+  box-shadow: none;
+  height: var(--head-height);
+  white-space: nowrap;
+}
+/*---logo---*/
+[data-theme='dark'] .navbar__logo img {
+  content: url('/img/topic-dark.png');
+}
+/*---链接颜色---*/
+.navbar__title,
+.navbar__link {
+  color: var(--text);
+}
+
+.navbar__link:hover,
+.navbar__title:hover {
+  color: var(--link);
+}
+
+[class*='navbar__link--active'] {
+  color: var(--important);
+}

@@ -1,0 +1,7 @@
+/*---正文区视宽---*/
+.docItemContainer_Djhp {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid var(--line);
+  padding: 0 10px;
+}

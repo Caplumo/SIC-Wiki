@@ -1,0 +1,12 @@
+:root {
+  --text: #1a4141;
+  --title: #194a56;
+  --important: #0068ad;
+  --tips: #00674f;
+  --pad: rgba(240, 245, 245, 0.6);
+  --line: #216658;
+  --bg: rgb(235, 240, 240);
+  --link: #004ab8;
+  --cover: rgba(238, 234, 212, 0.6);
+  --bg-image: url('/img/bg.webp');
+}

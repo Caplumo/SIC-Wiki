@@ -1,0 +1,39 @@
+.LB-pad {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--pad);
+  backdrop-filter: blur(10px);
+  z-index: 8000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LB-img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  z-index: 10;
+}
+
+.LB-button {
+  position: absolute;
+  padding-bottom: 2px;
+  top: 20px;
+  right: 30px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--line);
+  font-size: 2rem;
+  line-height: 1.2;
+  cursor: pointer;
+  background: var(--bg);
+  border-radius: 50%;
+}

@@ -1,0 +1,17 @@
+.navbar__search-input {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background-color: var(--pad);
+  transition: 0.3s;
+}
+
+.navbar__search-input:focus {
+  border-radius: 0px;
+  transition: 0.3s;
+}
+
+@media not all and (hover: hover) and (pointer: fine) {
+  .navbar__search-input.searchInput_YFbd.input_FOTf:focus {
+    width: 91vw;
+  }
+}
