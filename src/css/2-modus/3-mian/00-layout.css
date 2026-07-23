@@ -1,7 +1,17 @@
 /*---正文区视宽---*/
-.docItemContainer_Djhp {
+[class*='docItemContainer'] {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0;
+  margin-left: auto;
   border: 1px solid var(--line);
   padding: 0 10px;
+}
+
+.col {
+  margin: 0;
+  margin-left: auto;
+}
+
+.row {
+  justify-content: flex-end;
 }

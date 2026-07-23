@@ -20,7 +20,11 @@
   border-left: none;
   border-bottom: none;
 }
-/*---移动导航栏---*/
+
+.sidebar_njMd {
+  padding: 0;
+}
+/*---汉堡菜单导航栏---*/
 .theme-layout-navbar-sidebar-panel,
 .theme-layout-navbar-sidebar.navbar-sidebar {
   background-color: var(--null);

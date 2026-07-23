@@ -1,3 +1,10 @@
 .theme-doc-toc-mobile {
+  width: 100vw;
   position: fixed;
+  top: 30px;
+  left: 0px;
+  z-index: 50;
+  border: 1px solid var(--line);
+  background-color: var(--bg);
+  border-radius: 0px;
 }

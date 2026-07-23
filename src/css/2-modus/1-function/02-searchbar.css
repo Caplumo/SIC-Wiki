@@ -1,17 +1,12 @@
 .navbar__search-input {
   border: 1px solid var(--line);
   border-radius: 20px;
-  background-color: var(--pad);
-  transition: 0.3s;
-}
-
-.navbar__search-input:focus {
-  border-radius: 0px;
-  transition: 0.3s;
+  background-color: var(--bg);
+  transition: width 0.35s ease;
 }
 
 @media not all and (hover: hover) and (pointer: fine) {
-  .navbar__search-input.searchInput_YFbd.input_FOTf:focus {
-    width: 91vw;
+  .navbar__search-input {
+    max-width: 92vw;
   }
 }

@@ -2,3 +2,15 @@
 .is-chromium * {
   backdrop-filter: none !important;
 }
+
+.is-chromium .theme-layout-navbar-sidebar,
+.is-chromium .LB-pad {
+  background: var(--bg);
+  z-index: 50;
+}
+
+.is-chromium .theme-doc-sidebar-container,
+.is-chromium .table-of-contents,
+.is-chromium pre {
+  background: var(--pad);
+}
