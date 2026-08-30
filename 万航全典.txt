@@ -1,1 +1,710 @@
-﻿══════前言════════════主编的话══════本人是第一次编纂这种大型资料，有不足的地方还请各位多多包涵。在这里我要感谢圈内的许多大佬在本资料的编纂过程中提供的支持，为本书编纂提供帮助（无论大小）的人员我已写在页首，在这里就不多做赘述。有句话说的好：“一流的作家写不出二流的作品”，但我这个二流的玩家正在尝试整理出一流的资料。我虽是个二流玩家，但却是这个圈子里目前最有可能也是最合适编写这种大跨度资料的人之一。我现在想的是：这种类型的资料现在是空缺的，鉴于圈内当下技术混乱无章的现状，因此必须得有这么一篇资料，以统一技术的叫法，并且为想要系统性学习技术的人提供指导，内容可能不能做到尽善尽美，但起码能起到灯塔的指引作用，让想进行系统性学习的人不至于像无头苍蝇一样乱创，到处东问一点西问一点。而对于基业大成者，阅读系统性的资料想必也会有所裨益。编者在此恳求，如有看到错误或者不当的地方请带着详细的数据更正错误，编辑部将不胜感激。编辑本资料的初衷同上文所述，是见全圈未有大体量，大范围覆盖的详尽资料/总结。因此萌生出了编纂一个涵盖各方各面的较为详尽资料的想法。而对于我自身有可能能成功编纂这样一篇资料的原因是，我本人在SFS中各个玩法所涉猎范围是较广的，且具有一定的深度与自学能力，因此我推断我在各个方面大佬的帮助下能够整合出一篇拥有详细数据，理论与实验支撑的资料。而事实也确实如此，在面对一些前沿科技与自学极难弄懂的条目时（如一体化磁推与拓展包中的地形数据），是在这方面领域的专家为我提供的模型/数据/实验支持。在这方面的编纂中，我仅是起到润滑剂与螯合剂的作用而已。关于《万航全典》：本作的编撰主旨是以游戏为核心。在编撰初期有人提到了将现实中的公式与原理引入本作，我给出的答复与计划是这样的：这个资料我的计划是专注于游戏本身，但因为游戏中的代码世界与现实不可能相同，所以还是以游戏内为准。而现实中的公式原理，能参考运用的只要是我知道的或者是我不知道被你们所提到的，都会加进去。因此，游戏中出现与现实不符的物理现象时我将会指出，并且将现实中的公式/定理加入附表中以供对照区分。══════阅前须知══════重要：本作的数据收集版本为移动端：1.4.06，1.5.10.2，1.5.10.5，PC端：1.5.10.2。讨论范围为原版以及相应破解版。不讨论如宇航员版本等改版。本作使用翻译与附表中的中文语言包统一。对于阅读本作：本作由于分类关系，难度并不呈线性增长。对于阅读本作可能的目的人群，我在这里提供一些阅读建议：①拥有一定技术基础想要查漏补缺者：  结合目录快速对照检索所需查看条目，在子条目中学习时结合注释与附表。②缺乏经验前来学习者：  先将基础的『文件知识相关』与『零件细则』学习完毕之后，参考附表中所给出的  难度级别划分自行决定学习顺序。③全知全能的佬东西：  随便看看吧，或许能有新发现呢？如果有错误或缺漏欢迎指正添补。══════主要玩法概述══════《航天模拟器》（《SpaceFlightSimulator》）（以下简称SFS）是一款2D的航天模拟策略类游戏，其以高度自由的组装玩法而著称。其玩法人群可主要分为以下几个玩法与流派：1：以追求高仿真度，美观性为目标的玩法被称之为仿造。其有模仿现实的物体与   模仿/创造虚拟的物体之分。前者被称为“实物仿造”（简称“实仿”），后者被称为“虚物仿造”（简称“虚仿”），可通简称为“仿”。其玩家所组成的社区/团体被称作“仿圈”。   这是SFS目前被选择最多的游玩方式，有着近乎无限的自由度。2：以利用特性制造具有对造物破坏能力的物品为目标的玩法被称作“军事模拟”（简称“军”）。同理，其玩家所组成的社区/团体被称为“军圈”。   这种玩法被认为是SFS中未开发内容最多，也是最难的玩法。3：以仿真操作为目标的玩法及人群无特殊称呼。   这种玩法倾向于模拟实际中的航天操作，有着一定的操作门槛。4：以开发拓展包为目标的玩法及人群无特殊称呼。   这种玩法是以创造拓展包为核心。其改需要具备一定的数学&物理知识。以上：无论哪种玩法都需要具备一定的耐心，可以说想要玩好SFS，耐心是必要的。各种主流玩法之间也并非冲突对立，很多技术比如『航行技术』在前三种玩法之中是通用的。你可以选择你所想主修的方向，也可以将多种玩法相互结合以创造你心中理想的造物。正于此地，愿你找到你想走的路。临时注释：绿色为待索引 紫色为学术造假          黄色为待补充 红色为胡编乱造          青色为待转移═══════文件知识相关═════════════关于文件浏览══════对于游玩SFS，改文件不是必须的，但是学会改文件能够让你在创作中拥有更高的灵活度。在本作接下来的章目中，将会出现极多的改文件内容。因此，如需无障碍的阅读本作全部内容，学会查看与修改文件是必须的。查看文件推荐使用Es与MT文件管理器，Android版本在11以下也可用自带的文件管理。但对于高版本Android系统（Android10开始无法直接利用MT/Es文件管理器查看文件；Android11开始无法利用自带的文件管理查看文件）查看文件在不给予root权限的情况下需要用MT文件管理器+Shizuk授权的方式。在这里因为篇幅原因，直接引用B站上的Shizuku授权教程：https://b23.tv/ykGw7zN若无法打开请复制粘贴后使用浏览器打开视频。※在以下的文档中默认阅读者已经可以成功的打开data内文件！※文件全局使用半角字符，若加载报错请检查标点！（文本内容不限）══════目录中文件══════■SFS储存文件的路径如下：  /storage/emulated/0/Android/data/com.StefMorojna.SpaceflightSimulator/※iOS系统为：我的iPhone/com.StefMorojna.SpaceflightSimulator/※1.4汉化版的末级名称可能会略有出入■QQ储存下载文件的路径如下： /storage/emulated/0/Android/data/com.tencent.mobileqq/Tencent/QQfile_recv/可复制后将其粘贴在MT文件管理器上方路径直接打开，也可逐级打开。（文件的初始位置位于/storage/emulated/0/）※对于PC，文件存储路径与移动端存在差异，以读者实际存储位置为准。 接下来是解释SFS储存文件的文件夹内文档的所含内容：■移动端1.5版本：┏cache┇┣UnityShaderCache┇┇┣XXX* /unity着色器缓编译缓存┇┇┗version.txt /着色器缓存版本标识┇╚Rocket.png /分享火箭后生成┗files  ┣Cache  ┇┗Translations  ┇  ╚links /语言包链接库（选择语言概率生成）  ┣Custom Solar Systems /本地星系系统  ┇┗Example /示例星系-原版太阳系  ┇  ┣Heightmap Data /地形数据  ┇  ┇┗XXX.txt* /地形数据文件  ┇  ┣Planet Data /星球数据  ┇  ┇┗XXX.txt* /星球数据文件  ┇  ┣Texture Data /星系贴图资源  ┇  ┣Import_Settings.txt /星系加载设置  ┇  ┣Space_Center_Data.txt /发射台数据  ┇  ┗Version.txt /星系版本号  ┣Custom Translations /本地语言包  ┇┣Example.txt /示例语言包  ┇╚导入的语言包*  ┣il2cpp /代码语言转换相关  ┇┣Metadata   ┇┇┗global-metadata.det /代码混淆映射表  ┇┣Resoureces /预编译资源  ┇┗unity.ver /unity版本  ┣Logs /日志  ┇┣counter.txt /事件计数器  ┇┗XXX.txt* /运行日志  ┣Saving /游戏数据  ┇╠Blueprints /蓝图储存文件夹（保存第一个蓝图后生成）  ┇┇╚保存的蓝图*  ┇┇  ╠Blueprints.txt /蓝图文件  ┇┇  ╚Version.txt /版本号  ┇┣Notifications /通知内容  ┇┇┣TimeTracker /时间敏感数据  ┇┇┇┣First_Has_Any_Expansion.txt /首次打开拓展内容时间戳  ┇┇┇┣First_Has_Full_Bundle.txt /首次拥有完整捆绑包时间戳  ┇┇┇╠First_Seen_Shop.txt /首次查看商店（查看商店后生成）  ┇┇┇╠Last_Seen_Shop.txt /最后一次查看商店（查看商店后生成）  ┇┇┇┗Playtime.txt /游玩时长统计  ┇┇┣ask_notifications.txt /通知权限请求记录  ┇┇╠Ask_Rate_n* /尚不明确  ┇┇╠Converted_Planets /异常记录（出现非正常值后生成）  ┇┇┣Development_Update.txt /未读更新查阅  ┇┇╠Feature_Use.txt /功能使用统计（游玩后生成）  ┇┇┣Has_Ran_App.txt /首次运行标记  ┇┇┣InstalledVersion.txt /当前游戏版本  ┇┇┣Last_Played_Version.txt /最后游玩版本  ┇┇┣Played_Previously.txt /非首次运行标识  ┇┇┣purchase_debug.txt /购买日志  ┇┇╠Revent_Functionality.txt /版本回退日志（游玩后生成）  ┇┇╠Seen_Push_Notifications.txt /通知已查阅标识（查阅通知后生成）  ┇┇┣Translation_Example_Version.txt /翻译示例版本  ┇┇╠Tut_Basic_Build.txt /基础建造教程完成标记（游玩后生成）  ┇┇╠Tut_InfiniteBuildArea.txt /自由建造区域解锁标记（游玩后生成）  ┇┇╚Tut_Launch.txt /发射教程完成标记（游玩后生成）  ┇┣Seetings /设置  ┇┇╠AudioSettings.txt /声音设置（修改声音后生成）  ┇┇╠LanguageSettings_2.txt /语言设置（修改语言后生成）  ┇┇╠SandboxSettings.txt /作弊设置（作弊位于设置界面的版本生成，可带至高版本）  ┇┇╚VideoSettings.txt /画面设置（修改画面设置相关后生成）  ┇╚Worlds /世界（创建世界后生成）  ┇  ╠保存的世界*  ┇  ┇╠Backup/备份  ┇  ┇┇╠Backup_n* /具体备份文件  ┇  ┇┇┇╠Achievements.txt /航天器成就  ┇  ┇┇┇╠Branches.txt /发射日志  ┇  ┇┇┇╠CareerState.txt /生涯数据（仅在生涯模式下生成）  ┇  ┇┇┇╠Challenges.txt /挑战完成状况  ┇  ┇┇┇╠Rockets.txt /造物数据  ┇  ┇┇┇╠Version.txt /版本号  ┇  ┇┇┇╚WorldState.txt /全局游戏状态    ┇  ┇┇╚RevertPointer.txt /备份计数  ┇  ┇╠BlueprintPersistent /世界在建蓝图  ┇  ┇┇╠Blueprint.txt /蓝图文件  ┇  ┇┇╚Version.txt /版本号  ┇  ┇╠Persistent /主存档  ┇  ┇┇╠Achievements.txt /航天器成就  ┇  ┇┇╠Branches.txt /发射日志  ┇  ┇┇╠CareerState.txt /生涯数据（仅在生涯模式下生成）  ┇  ┇┇╠Challenges.txt /挑战完成状况  ┇  ┇┇╠Rockets.txt /造物数据  ┇  ┇┇╠Version.txt /版本号  ┇  ┇┇╚WorldState.txt /全局游戏状态  ┇  ┇╠Quicksaves /快速保存  ┇  ┇┇╠保存的进度*  ┇  ┇┇┇╠Achievements.txt /航天器成就  ┇  ┇┇┇╠Branches.txt /发射日志  ┇  ┇┇┇╠CareerState.txt /生涯数据（仅在生涯模式下生成）  ┇  ┇┇┇╠Challenges.txt /挑战完成状况  ┇  ┇┇┇╠Rockets.txt /造物数据  ┇  ┇┇┇╠Version.txt /版本号  ┇  ┇┇┇╚WorldState.txt /全局游戏状态  ┇  ┇┇╚display_order.ordr /排序索引  ┇  ┇╠RevertLaunch /发射前备份  ┇  ┇┇╠Achievements.txt /航天器成就  ┇  ┇┇╠Branches.txt /发射日志  ┇  ┇┇╠CareerState.txt /生涯数据（仅在生涯模式下生成）  ┇  ┇┇╠Challenges.txt /挑战完成状况  ┇  ┇┇╠Rockets.txt /造物数据  ┇  ┇┇╠Version.txt /版本号  ┇  ┇┇╚WorldState.txt /全局游戏状态  ┇  ┇╚WorldSettings.txt /世界设置  ┇  ╚display_order.ordr /排序索引  ┣Unity /Unity引擎相关数据目录    ┇ ┗37d4a9e6-dee9-461c-a7f9-24b5fd73821e    ┇  ┣Analytics /用户行为数据    ┇  ┇┣ArchivedEvents /历史事件存档  ┇  ┇┣config /分析功能配置参数    ┇  ┇┗values /分析指标数值存储   ┇  ┗PerformanceReporting /性能监控报告  ╚UnityServicesCachedMetrics /Unity服务缓存指标（生成条件尚不明确）■移动端1.4版本：┏cache┇┣UnityShaderCache┇┇┣XXX* /unity着色器缓编译缓存┇┇┗version.txt /着色器缓存版本标识┇╚Rocket.png /分享火箭后生成┗files  ┣Resources  ┇┣ Planet Data /星球数据  ┇┣Textures /星系贴图资源  ┣Saving  ┇╠Blueprints /蓝图存放文件夹（保存蓝图后创建）  ┇┇╚保存的蓝图.bp*  ┇┗Worlds /世界数据  ┇  ┗main   ┇   ┣ Quicksaves  ┇   ┇╚保存的进度.qks* /快速保存存档（创建快速保存存档后创建）  ┇   ╚Persistant.qks /主存档（游玩并发射后创建）  ┣Unity /Unity引擎相关数据目录    ┇ ┗37d4a9e6-dee9-461c-a7f9-24b5fd73821e    ┇  ┣Analytics /用户行为数据    ┇  ┇┣ArchivedEvents /历史事件存档  ┇  ┇┣config /分析功能配置参数    ┇  ┇┗values /分析指标数值存储   ┇  ╚PerformanceReporting /性能监控报告  ╚UnityServicesCachedMetrics /Unity服务缓存指标（生成条件尚不明确）■PC端：※在上表中：①文件名后标注“*”的意为不止一个此类型的文件。            ②文件名为XXX的意为无法具体确定文件名称，n为文件序号。            ③表中文件名为中文的（如{导入的语言包}）为玩家自行导入/创建的文件，              名称是玩家所取。            ④关系链中“╠”“╚”等空心符号意为该文件在              {com.StefMorojna.SpaceflightSimulator}创建之初并无，需要在满足释              义后方括号内的条件后才会创建。════不适于后续章节分类中的重要文件细则════※下文中所解析文件前方均以“--”代替，PC端为{com.StefMorojna.SpaceflightSimulator}{/storage/emulated/0/Android/data/com.StefMorojna.SpaceflightSimulator/}════移动端1.5════■--files/Custom Translations：  此为语言包所导入目录。当从QQ等获得语言包后，将语言包导入此文件夹后，游戏设  置内语言选项中即可选择所导入语言包。  ①下面以MT文件管理器为操作软件，从QQ获得语言包举例导入。    1.下载好语言包后，在其中一个窗口内逐条/粘贴打开QQ下载文件储存目录 {/storage/emulated/0/Android/data/com.tencent.mobileqq/Tencent/QQfile_recv/}      另一个窗口打开{--files/Custom Translations}    2.长按语言包，选择“移动-＞”。（1-1-1）    ※请检查：导入该目录文件下的语言包必须为.txt文      件才能正常运行。语言的更改可能需要先切换回原      版英文后再切换为所需语言包，部分版本需选好语      言包后退出游戏重进。  ②其中的Example.txt为当前游戏版本的语言翻译其内的各项内容对照可直接打开已经做好的语言包查看。也可自行对照翻译。将等号右边的英文替换为所需翻译语种并保存后，一个语言包就做好了。（1-1-2）对于可输入文本，在文字前方和后方加入前后缀可改变字体颜色和大小。这里给出规律和示例：前缀格式为<Size＝m>；<color＝M>；<i>，相应后缀为：          ▲1-1-1       ▲1-1-2</size>；</color>；</i> ，<size＝m>的作用是改变字号，（字体大小）其中m为数字，含义为字号；<color＝M>的作用是改变字体颜色，M为颜色所对应的英文，如“red”；<i>的作用是使字体倾斜。图1-1-3为前后缀所对应效果展示。其中，可改变颜色种类仅有图示中的颜色。有“/”的则是前后两个单词为同一种颜色效果。※前缀与后缀单独出现时无法改变字号或颜色，且前/后缀会出现在文本中。在部分界面的文本中，前后缀与文本内容需空格，若识别异常请检查空格。若需同时更改多项设置，以文本内容为对称轴，前后缀必须成对称关系，若顺序颠倒，全局文本中的前后缀将无法正确识别而出现在文本中。若前后缀内为不可用的颜色/字符串，字体将不会发生任何变化。游戏内可输入文本（如火箭名称）会出现字符串数量限制，因此有可能无法在游戏内改变其字体。                                                                                                                                                        ▲1-1-3■--files/Saving：Ⅰ  /Settings：  ①/AudioSettings.txt：此文件存储的是全局音频设置，格式为：{"soundVolume": 1.0,"musicVolume": 1.0}soundVolume：音效大小，取值范围为[0,1]，改动为大于1时等效为1，               小于0时等效为0；musicVolume：音乐大小，取值范围为[0,1]，改动同soundVolume。  ②/LanguageSettings.txt：此文件存储的是全局语言设置，格式为：{"name": "1.5.10.2汉化by暝翮","custom": true}name：正在应用的语言包名称；custom：语言包来源，true为本地语言包，false为预制语言包。  ③/VideoSettings.txt：此文件内存储的是画面设置，格式为：{"freeOrientation": false,"fps": 144,"menuScale": 0.74999994, "menuOpacity": 1.0,"cameraShake": true,"orbitLinesCount": 3,"FXAA": true}freeOrientation：屏幕旋转：开为true，关为false；fps：帧率：共有30、60、75、90、100、120、144七个级别可选，强行改动为非可           选帧率将被重置为30；menuScale：UI（界面）尺寸：            取值范围为[0,1]，改动为大于1时等效为1，小于0时等效为0；menuOpacity：UI（界面）不透明度：取值范围[0,1]，改动同menuScale；cameraShake：屏幕晃动：开为true，关为false；orbitLinesCount：轨道线显示详细程度（数量）：共有3、4、5、6、7、8、9、10七个级别可选，级别越高，轨道显示详细程度越高，改动同menuScale；FAXX：抗锯齿：开为true，关为false。 ※若从文件内更改设置，应用所改设置需重启游戏。对于拖条设置，如果被改为非预设值   将会被重置为初始值。Ⅱ  /Worlds/保存的世界：  ①/BlueprintPersistant/Blueprint.txt：此文件为当前世界中在建蓝图的数据，其数据修改和其余的{Blueprint}相同，在后面的章节中会介绍其性质。  ②/Persistent & /Quicksaves/保存的进度 & /RevertLaunch & /Backup/Backup_n：这四个文件夹中子目录为相同性质，合并讲解。⒈Achievements.txt：  此文件夹内储存的是航天器所达到的成就，其格式为：      [{"type": a,"value": b,"planet": X},{"type": m,"value": n,"planet": Y}]      其中：type为成就类型，value为其相关值，planet为成就完成所在对象，如Moon。      下划线部分为部分成就所特有，例如：环绕轨道，当成就类型为与所在地无关的类      型时，下划线部分将不会出现。以上示例为两个成就，其为基本格式，用“,”隔开，      此存储的是全局航天器所完成成就，多个航天器所完成成就不重复计入。   ⒉Branches.txt：     此文件内存储的是航天器日志      ⒊CareerState.txt：     此文件内存储的是生涯模式中解锁的科技，其完整格式为：{"funds":25.0,"unlocked_Parts":["HeatShield_0_0","EngineValiant_0_0"],"unlocked_Upgrades":["Staging","Side Boosters 1","Liquids 1","Powerful Rocketry","Landing"]}     其中，“funds”为资金，单位为百万，图     1-1-4为解锁部件(unlocked_Parts)与解     锁升级(unlocked_Upgrades)所对应的游     戏科技树节点。   ⒋Challenges.txt：     此文件内存储的是世界全局所达成的挑     战。其格式为：["Liftoff_0","Reach_10km","Reach_30km","Reach_Orbit"] 其中内容为英文原文的挑战     名称，以“,”分隔，拓展星球的挑战内容     自动生成。                                                                             1-1-4            1-1-5   ⒌Rockets.txt：     此文件内存储的是世界中现有的火箭数据。这里以图1-1-5火箭举例，零件摆放顺序     为依次从上至下，当引擎关闭，节流阀关闭，并调节至80%，快捷栏内容如图所示。     其内容为：[{"rocketName":"","location":{"address":"Earth","position":{"x":364.9998779296875,"y":630031.353647232},"velocity":{"x":-7.0054784195860975E-09,"y":5.7948881249103579E-09}},"rotation":359.97644,"angularVelocity":7.73473E-08,"throttleOn":false,"throttlePercent":0.802944541,"RCS":false,"parts":[{"n":"Parachute","p":{"x":0.0,"y":0.0},"o":{"x":1.0,"y":1.0,"z":0.0},"t":"-Infinity","N":{"deploy_state":0.0,"animation_state":0.0,"temperature":"-Infinity"}},{"n":"Capsule","p":{"x":0.0,"y":-2.0},"o":{"x":1.0,"y":1.0,"z":0.0},"t":"-Infinity","N":{"temperature":"-Infinity"}},{"n":"HeatShield","p":{"x":0.0,"y":-2.0},"o":{"x":1.0,"y":1.0,"z":0.0},"t":"-Infinity","N":{"width_original":2.0,"width":2.0,"shield_temp":"-Infinity"}},{"n":"Separator","p":{"x":0.0,"y":-3.0},"o":{"x":1.0,"y":1.0,"z":0.0},"t":"-Infinity","N":{"width":2.0,"width_b":2.0,"height":0.42000007629394531,"height_max":4.0,"force_percent":0.5},"T":{"color_tex":""}},{"n":"FuelTank","p":{"x":0.0,"y":-7.0},"o":{"x":1.0,"y":1.0,"z":0.0},"t":"-Infinity","N":{"width_original":2.0,"width_a":2.0,"width_b":2.0,"height":4.0,"fuel_percent":1.0},"T":{"color_tex":"_","shape_tex":"_"}},{"n":"EngineHawk","p":{"x":0.0,"y":-7.0},"o":{"x":1.0,"y":1.0,"z":0.0},"t":"-Infinity","B":{"engine_on":true,"heat_on__for_creative_use":true,"gimbal_on":true}}],"joints":[{"a":0,"b":1},{"a":1,"b":2},{"a":2,"b":3},{"a":3,"b":4},{"a":4,"b":5}],"stages":[{"stageId":1,"partIndexes":[1]},{"stageId":2,"partIndexes":[2]},{"stageId":3,"partIndexes":[3,5]}],"staging_EditMode":false,"branch":0}]      其中：     ◆rocketName：当前分节所记录造物的名称；     ◆location：该造物所在的位置：      ┣address：所处引力范围的星球，      ┗position：具体位置：以所处引力范围的星球中心为原点建立平面直角坐标系：        ┣x：造物于x轴上对应的坐标        ┗y：造物与y轴上对应的坐标；     ◆velocity：沿当前轨道的速度：      ┣x：造物于x轴方向上的分速度      ┗y：造物于y轴方向上的分速度           游戏中速度表中的速度为这两个速度的矢量和；     ◆rotation：该造物的角度（以逆时针方向计）；     ◆angularVelocity：该造物旋转的速度，其单位为°/s（度每秒）（以逆时针方向计，                      负数的旋转方向为顺时针）；     ◆throttleOn：节流阀开关状态，开为true，关为false；     ◆throttlePercent：节流阀阀门大小，正常取值范围为[0,1]；     ◆RCS：单元推进系统开关状态，开为true，关为false；     ◆parts：该造物的零件组成，其内部格式同blueprint，此处略过；     ◆joints：链接顺序，其中a为父节点，b为子节点，为树状链接顺序（其内序号为上             文中parts中的零件对应出现顺序）；     ◆stages：该造物快捷栏内所含部件，其中stageld为快捷栏顺序，partlndexes为该              级快捷栏所含部件（其内序号为上文中parts中的零件对应出现顺序）；     ◆staging_EditMode：快捷栏编辑状态，开为true，关为false；     ◆branch：索引至branch中该造物对应日志。     ※最外层的方括号“[]”为数组引用，内部第一层花括号“{}”为造物对象，各层花括号用       英文的逗号“,”链接。因此，当需转移/导入造物时，请注意格式应为：[{ },{ },...]    ⒍version.txt：      该存档的版本号（只可从低版本迁移至高版本）    ⒎WorldState.txt:      此文件内存储的为世界内状态，其格式为：{"worldTime":1000229.3015892979,"timewarpPhase":0,"mapView":false,"mapPosition":{"x":365.02282507980334,"y":630026.09425703716,"z":409516.96126707416},"mapAddress":"Planet:Earth","targetAddress":"null","playerAddress":"Rocket:0","cameraDistance":12.0}      其中：     ◆worldTime：发射运行时间，起始值为1000000.0，在蓝图界面点击发射加载完成      后，每过一秒这个值加1（若时间加速，按加速后时间计入）；     ◆timewarpPhase：时间加速阶级。时间加速度阶级最高为464（共465个阶级），加      速度阶级递增不包括阶级0~2（阶级0、1、2，分别为1x、2x、3x）的时间加速与      阶级关系为：n为阶级数，w＝n-2（3≤n≤464），T为时间加速度，运算#w/3#表示      计算w/3后结果向下取整：T=5w-#w/3#*4#w/3# 在游戏内可达到的加速上限阈值与      星系内最大公转周期相关，星系内最大公转周期星球公转周期越大，可在游戏内直接      达到的时间加速也就越大。其关系为：n定义同上，a为最大周期星球的长半轴，g      为其中心天体的重力加速度,r为其中心天体的半径:n={㏒₄.₇₂√[4π2a3/(576gr2)]}+2      计算结果向下取整。（由于浮点运算与向下取整，计算结果和实际情况有小于千分之五的概率出现阶层误差）时间加速通过直接修改文件可以突      破阈值限制，且修改后可自由调节（当加速度低于上限阈值后需重新修改）。当加速  度达到5x1018（5E+18，第31个阶级）前后，云层转动将停止，达到5x1038（5E+38，  第61个阶级）后，星球将会因为轨道计算错误而堆叠在一起，当加速度超过第464  个阶级（1x10308（1E+308））后，加速度将变为Infinity，此时worldTime时间戳计  算将错误，变为NaN。     ◆mapView：地图视角开关状态，开为true，关为false；     ◆mapPosition：地图视角设置，坐标系以mapAddress中的目标为原点，xy轴单位                    为m；z为地图镜头距离（值越大视野越大），游戏内视角缩放上限                    与星系大小相关；     ◆mapAddress：地图视角相对参考系，表现为视野跟随，目标可以是造物；     ◆targetAddress：导航目标，目标名称为选中星系名称或造物序号（日志序号），null                     为无目标。     ◆playerAddress：当前控制的造物序号（日志序号）     ◆cameraDistance：镜头距离（值越大视野越大），游戏内缩放上限与星系大小相关。  ③/WorldSettings.txt：    此文件存储的是当前存档的全局设置，一个新建原版太阳系存档的格式为：{"solarSystem":{"name":""},"mode":{"mode":0,"allowQuicksaves":true},"difficulty":{"difficulty":0},"playtime":{"lastPlayedTime_Ticks":638824955182065480,"totalPlayTime_Seconds":10.0},"cheats":{"infiniteFuel":false,"noAtmosphericDrag":false,"unbreakableParts":false,"noGravity":false,"noHeatDamage":false,"noBurnMarks":false,"infiniteBuildArea":false,"partClipping":false}}其中：   ◆solarSystem：存档所用拓展包，当无名称时为默认太阳系。   ◆mode：游戏模式。     mode:     0为经典模式（常规模式） 1为生涯模式（需要解锁科技树，无法作弊、改文件） 2为沙盒模式（与经典模式的区别在于多了固推） ≥3为挑战模式（与经典模式的区别在于无法作弊）※每个版本拥有的模式不尽相同，若对应数字不是对应模式，则说明当前版本不存在对  应的模式，数值大于当前版本最大模式有效值时，认为其为最大有效值对应的模式。  生涯模式与挑战模式可以通过修改本文件的方式获得作弊，但是游戏模式将强制改为  经典模式，固推将会保留，但在重进游戏后消失。部分版本可在创建世界时选择挑战  模式，生涯模式需在创建世界时将世界命名为Test Career或在本文件内修改调出，  沙盒模式仅可在本文件内修改调出。     allowQuicksaves:快速存档设定，true为允许存档，false为禁止。   ◆difficulty：难度设定。0为normal（普通），1为hard（困难），2在PC中为RSS（真              实太阳系），但在1.5.10.5以下的移动端中，大于等于2的数字为普通。   ◆playtime：     lastPlayedTime_Ticks：距离上次游玩时间，单位为tick（1s＝1x107tick）。数值为上次退出游戏时记录的系统时间。     totalPlayTime_seconds：总游玩时间，单位为秒，初始值为0。   ◆cheats：作弊开关状态，开均为true，关均为false     infiniteFuel：无限燃料；              noHeatDamage：无热效应伤害；     noAtmosphericDrag：无大气阻力；   noBurnMarks：无烧蚀痕迹；     unbreakableParts：牢不可破的部件；  infiniteBuildArea：无限的建造区域；     noGravity：无重力；                 partClipping：部件堆叠。════移动端1.4════■--Saving/Worlds/main：  Quicksaves/保存的进度.qks & Persistant.qks：  这两个文件为相同性质，合并讲解：  ════PC端════════════蓝图细则════════※本章所描述对象为全局的{blueprints/蓝图名称/ blueprint.txt & 蓝图名称.bp}※本文所描述的为1.5高版本的蓝图格式，1.4和1.5低版本略有不同，但相差不大。══════蓝图导入══════※下面以MT文件管理器为操作软件，从QQ获得蓝图文件举例导入蓝图存储的路径为：/storage/emulated/0/Android/data/com.StefMorojna.SpaceflightSimulator/files/Saving/Blueprints/在MT文件管理器的其中一个窗口打开这个路径，另一个窗口则打开QQ存储下载文件的目录：/storage/emulated/0/Android/data/com.tencent.mobileqq/Tencent/QQfile_recv/1.4版本的蓝图一般直接为.bp格式出现，对于1.5的则是压缩包。（2-1-1）如果为.bp格式的文件，直接长按后选择移动即可。对于压缩包则需要先确认所解压文件的目录级别：1.4版本找到.bp格式级别的文件，长按后选择解压到另一窗口路径；（2-1-2）1.5版本找到blueprint.txt&version.txt文件的上一级文件夹，长按后选择解压到另一窗路径（2-1-3）       ▲2-1-1                     ▲2-1-2                    ▲2-1-3※若导入不正确，将会出现无法识别/加载蓝图的情况。※蓝图在1.4版本中为.bp格式。如有需要，需在1.5~1.5.4中用同导入1.4的方法二次保存转至更高版本。无法通过将.bp格式文件修改后缀为.txt并与Version文件组成文件夹的方式将.bp蓝图升至高版本。══════隐藏条目══════※这里仅讨论可正常调出的文件内容■电池：  这是1.4版本中遗留下来的零件文件，其零件格式为：     {      "n": "Placeholder Battery",      "p": {        "x": 0.0,        "y": 0.0      },      "o": {        "x": 1.0,        "y": 1.0,        "z": 0.0      },      "t": "-Infinity",      "N": {        "width": 1.0      }    }■RTG（放射性同位素发电机）  这是1.4版本中遗留下来的零件文件，其零件格式为：    {      "n": "Placeholder RTG",      "p": {        "x": 0.0,        "y": 0.0      },      "o": {        "x": 1.0,        "y": 1.0,        "z": 0.0      },      "t": "-Infinity"    }电池与RTG（名称也显示电池）贴图模型如图2-2-1所示（左为RTG，右为电池），无任何特殊功能。如需加入蓝图中可将上述代码替换任意蓝图中的任意零件；也可在前后加入“,”插入；或直接保存附表中的蓝图，需要时用“融合”加入在建蓝图。■烧痕：  这是从{Worlds/~/Rockets}中，再入后拥有烧痕的零件中获得的，并未被刻意隐藏。      "burns": {        "angle": 0.0,        "intensity": 0.0,        "x": 0.0,        "top": "",        "bottom": ""      }其为单个零件中的子级代码，只作用于所属零件。导入后格式如图2-2-2所示。※以上代码导入时请务必注意格式！若加载报错请检查格式！          2-2-1▶                                               ◀2-2-2══════蓝图代码══════■零件通用：  一个完整的零件格式如下（整蓝图格式）： {  "center": 10.0,  "parts": [    {      "n": "_",      "p": {        "x": 0.0,        "y": 0.0      },      "o": {        "x": 1.0,        "y": 1.0,        "z": 0      },      "t": "-Infinity",      "N": {},      "B": {},      "T": {        "fragment": "",        "color_tex": "_",        "shape_tex": "_"      },      "burns": {        "angle": 0.0,        "intensity": 0.0,        "x": 0.0,        "top": "",        "bottom": ""      }    }  ],  "stages": [],  "rotation": 0.0,  "offset": {    "x": 0.0,    "y": 0.0  },  "interiorView": false}串联格式为："center": 10.0,"parts": [{part1},{part2},{part3},...],"stages": [{"stageId": 1,"partIndexes":[a,b,c,...]},{"stageId": 2,"partIndexes":[a,b,c,...]}...]"rotation": 0.0,"offset": {"x": 0.0,"y": 0.0},"interiorView": false}其中：◆"center":10.0：蓝图原点x轴坐标：y坐标恒为正常蓝图大小的蓝图下边界。往左为正， 可为负数，单位：m；◆"n":"_"：零件名称(name)：部分不同于游戏内英文显示名称；◆"p":{"x":0.0,"y":0.0}：零件位置(place)数据：其为笛卡尔坐标系(直角坐标系)，原点为center所确定的原点，单位：m；◆"o": {"x": 1.0,"y": 1.0,"z": 0.0}：方向(orientation)数据：x，y分别为贴图在对应轴上的长度倍数。对于大部分零件而言，更改仅为视觉上的缩放，但存在例外。零件在此项数值过大时会出现不同异常。z为旋转角度，单位为度。不同的零件有着不同的旋转中心，但都遵循一个规则：旋转中心为链接面的中点。在有多个可连接面的情况取位于最下方（零件自身的y轴负方向）的连接面中点；◆"t": "-Infinity"：零件当前温度（temperature）：于蓝图中更改时除NaN外无特殊影响。当零件在世界中被以蓝图形式创建时，温度数据将会重置为“-infinity”，NaN因其特殊性无法被更改，因此可用作保护零件不被再入效应损伤（仍会产生烧痕，在高于1.5.8的版本中无法忽视引擎产生的热）。被以Rockets形式加载时，温度将会正常加载此项中的数值。◆"N":{}：零件数值参数（Numeric）：其内为该零件的物理数据，如：实际宽度、高度、含油量、分离力等，更改后不仅会影响外观，还会影响其物理性质，如：长、宽、质量、自适应阶级、分离力度等。零件在此项数值过大时会出现不同异常。此数据对于每个零件都是不同的，对于各个零件的详细分解位于后文。◆"B":{}：零件行为参数（Behavior）：其内为该零件的行为数据，如：引擎开关/矢量开关、整流罩适应油箱、边缘分离等开关性设置。此数据对于每个零件都是不同的，对于各个零件的详细分解位于后文。◆"T": {"fragment": "","color_tex": "_","shape_tex": "_"}：零件贴图（Texture）：此条目为油箱，整流罩，鼻锥，分级器特有条目。["fragment": ""]为整流罩与测分离器特有，其为零件分片状态。后方双引号内为空是默认状态；为1是整体，无法分离；为left是左半片；为right是右半片。["color_tex": "_"]是零件颜色，["shape_tex": "_"]是零件形状，分级器无此项。其内可选项如图2-3-1。▼图2-3-1  ※点开图片查看高清原图◆"burns": {"angle": 0.0,"intensity": 0.0,"x": 0.0,"top": "","bottom": ""}:零件烧痕(burns):angle是烧痕的角度，以逆时针计，单位为度；intensity是烧痕强度，有效取值范围为[0,1.5]；x是烧痕中轴线位置；BYD老子编不下去了。◆"stages": []：该蓝图快捷栏内所含部件，以图2-3-2中火箭快捷栏举例（零件摆放顺序依次从上至下），其完整格式为："stages": [{"stageId": 1,"partIndexes": [5]},{"stageId": 2,"partIndexes": [3]},{"stageId": 3,"partIndexes": [0]},{"stageId": 4,"partIndexes": [2]}]其中stageld为快捷栏顺序，partlndexes为该级快捷栏所含部件（其内序号为parts中的零件对应出现顺序）◆"rotation": 0.0：该蓝图整体旋转角度，顺时针计，单位为度。旋转30°，60°，90°，120°的效果如图2-3-3。当旋转角度不为0时，将跳出是否以当前角度发射的提示。若选择以当前角度发射，则发射时造物将会以当前旋转角度被创建。2-3-2▲                                        2-3-3▲◆"offset"{"x": 0.0,"y": 0.0}：蓝图整体偏移，将蓝图中所有零件在不改变零件本身p{x,y}数值的情况下将整个蓝图向对应方向平移。单位m。◆"interiorView":内部视图开关，开为true，关为false。══════零件介绍══════※此处格式为:（质量，重心，大气阻力待补）■翻译名║英文原名  ◆代码（删去分行，不带烧痕）  ◆代码条目解释  ◆零件数据：重心/质量/临界损坏速度/最高耐热/阻力系数*参考面积（重心表示法为：以零件"p"中零件的定位点为原点，建立直角坐标系，将重心以点标出。对于每种零件而言，其质心关于贴图所在的位置均相同，这里所示的均为游戏内最小原单位零件，对于不同尺寸的零件，将重心与尺寸大小比例对应即可。）（单位：m/t/kN）  ◆零件介绍  ◆附图：零件质心及定位点（黄色十字交叉部位为质心大致位置，绿点为定位点（格点）■降落伞║Parachute  ◆{"n": "Parachute","p": {"x": 0.5,"y": 0.0},"o": {"x": 1.0,"y": 1.0,"z": 0.0},"t": "-Infinity","N": {"deploy_state": 0.0,"animation_state": 0.0,"temperature": "-Infinity"}}  ◆"N"：deploy_state：降落伞部署状态，取值范围为[0,2]。过程为连续动画，1为半展开，2                  为全展开。大于2时效果等同于2，且当造物静止后降落伞不会被切割，                  不产生阻力。animation：降落伞收回动画，取值范围[0,2]，被加载时以当前值对应动画开始倒放开           伞动画。这个状态下的降落伞不产生阻力。temperature：温度，且独立于"t"计算。此处的temperature优先级高于"t",温度数据会             优先填写在此处。当此处和"t"同时存在温度数据且此处温度数值低于"t"             时,温度递增将会优先加在此处,当温度数值相等后,叠加于"t"处。  ◆(0,0.2)  ◆用于在有大气的星球降落时减速，最大开伞高度取决于当前星球设置。  ◆■载人舱║Capsule  ◆{"n": "Capsule","p": {"x": 10.0,"y": 0.0},"o": {"x": 1.0,"y": 1.0,"z": 0.0},"t": "-Infinity","N": {"temperature": "-Infinity"}}  ◆"N"：    temperature：温度，且独立于"t"计算。此处的temperature优先级高于"t",温度数据会                优先填写在此处。当此处和"t"同时存在温度数据且此处温度数值低于"t"                时,温度递增将会优先加在此处,当温度数值相等后,叠加于"t"处。  ◆(0,0.2)  ◆具有控制属性。（造物包含零件内无控制属性零件时无法操控）  ◆■隔热盾║Heat Shield  ◆{"n": "Heat Shield","p": {"x": 10.0,"y": 18.0},"o": {"x": 1.0,"y": 1.0,"z": 0.0},"t": "-Infinity","N": {"width_original": 2.0,"width": 2.0,"shield_temp": "-Infinity"}}  ◆"N"width_original：原始宽度，决定width数值。width：真宽度，决定真大小，物理性质。初始由width_original决定，在蓝图中修改      无效果，在Rockets.txt中修改后零件尺寸变为对应大小。影响的物理性质：质      量shield_temp：温度，且独立于"t"计算。此处的temperature优先级高于"t",温度数据会             优先填写在此处。当此处和"t"同时存在温度数据且此处温度数值低于"t"             时,温度递增将会优先加在此处,当温度数值相等后,叠加于"t"处。◆(0,0.05*width)◆用于保护造物免受再入大气时再入效应造成的高温损害，但温度过高时自身仍会被烧  毁。常位于载荷底部。◆■分级器║Stage Separator  ◆{"n": "Separator","p": {"x": 10.0,"y": 16.0},"o": {"x": 1.0,"y": 1.0,"z": 0.0},"t": "-Infinity","N": {"width": 2.0,"width_b": 2.0,"height": 1.42,"height_max": 4.0,"force_percent": 0.5},"T": {"color_tex": ""}}  ◆"N"    width：真宽度，决定大小，物理性质，width_b数值。影响的物理性质有：质量，width_b：级间上端宽度，初始由width或自适应决定，在蓝图中修改无效果Rockets.txt         中修改后级间上端尺寸变为对应大小。height_max：级间最大高度。force_percent：分离力。"T"color_tex：颜色贴图，可选项见  ◆(0,0.25)  ◆用于分离火箭间级。级间部分无碰撞。  ◆■燃料箱║Fuel Tank  ◆{"n": "Fuel Tank","p": {"x": 10.0,"y": 14.5},"o": {"x": 1.0,"y": 1.0,"z": 0.0},"t": "-Infinity","N": {"width_original": 2.0,"width_a": 2.0,"width_b": 2.0,"height": 1.0,"fuel_percent": 1.0},"T": {"color_tex": "_","shape_tex": "_"}}  ◆"N"width_original：原始宽度，决定width数值（此项为1时，零件长度为1m）。width_a：真底部宽度,决定真底部大小,物理性质。初始由width_original或自适应决        定,在蓝图中修改无效果,在Rockets.txt中修改后油箱底部尺寸变为对应大小。        影响的物理性质有：干质量，最大燃料量width_b：真顶部宽度,决定真顶部大小,物理性质。初始由width_original或自适应决        定,在蓝图中修改无效果,在Rockets.txt中修改后油箱顶部尺寸变为对应大小。        影响的物理性质有：干质量，最大燃料量height：高度，决定零件高度（此项为1时，零件高度为1m），物理性质。        影响的物理性质有：干质量，最大燃料量fuel_percent：燃料百分比，决定该零件内燃料百分数，取值范围为R，但仅能通过修             改的方式使其大于1，小于0。当此项小于0时，部件扣除相应燃料的质             量，当此值在小于0的状态下被消耗时，值会瞬间归0。当与其他燃料             箱相接时，自动对相接燃料箱内的燃料进行加法运算，并使运算后燃料             加权平均于各相接燃料箱内。"T"color_tex：颜色贴图，可选项见shape_tex：形状贴图，可选项见  ◆(0,hight/2)  ◆为引擎提供燃料，供给面为四条边（线）。当与其它燃料箱相接触时，（不包括对接后的    面接触）这些燃料箱的燃料将加权平均于各个燃料箱内（燃料百分数相等）以保证重心不发生变化。  ◆■侧向分离器║Side Separator  ◆{"n": "Side Separator","p": {"x": 10.5,"y": 13.0},"o": {"x": 1.0,"y": 1.0,"z": 0.0},"t": "-Infinity","N": {"force_percent": 0.5},"T": {"fragment": ""}}  ◆"N"force_percent：分离力百分数，1＝160kN，游戏内以0.1（8kN）为梯度调节。"T"fragment：分片状态。后方双引号内为空是默认状态；为1是整体，无法分离；为left          是左半片；为right是右半片。  ◆(0,0.5)  ◆用于分离助推器。当被削为半片后，被消去的部分虽然没有碰撞箱，但是具有链接特性。  ◆■鼻锥║Aerodynamic Nose Cone  ◆{"n": "Cone","p": {"x": 10.0,"y": 8.5},"o": {"x": 1.0,"y": 1.0,"z": 0.0},"t": "-Infinity","N": {"size": 2.0},"T": {"color_tex": "_","shape_tex": "_"}}  ◆"N"size：尺寸，影响大小（长宽等比缩放， 此项为1时，底部长度为1m，高度为1.125m），     物理性质。影响的物理性质有：质量  ◆(0,0.8)  ◆  ◆■鼻锥║Aerodynamic Nose Cone  ◆{"n": "Cone Side","p": {"x": 13.0,"y": 9.0},"o": {"x": 1.0,"y": 1.0,"z": 0.0},"t": "-Infinity","N": {"size": 3.0},"T": {"color_tex": "_","shape_tex": "_"}}  ◆  ◆(0.25,0.75)  ◆  ◆■鼻锥║Aerodynamic Nose Cone  ◆{"n": "Cone Round","p": {"x": 16.0,"y": 6.0},"o": {"x": 1.0,"y": 1.0,"z": 0.0},"t": "-Infinity","N": {"size": 3.0},"T": {"color_tex": "_","shape_tex": "_"}}  ◆  ◆  ◆  ◆■隔热盾║Heat Shield  ◆{"n": "Heat Shield Hollow","p": {"x": 7.5,"y": 6.5},"o": {"x": 1.0,"y": 1.0,"z": 0.0},"t": "-Infinity","N": {"width_original": 4.0,"width": 4.0,"shield_temp": "-Infinity"}}  ◆  ◆(0,-0.05*width)  ◆  ◆■燃料箱║Fuel Tank  ◆{"n": "Base Small","p": {"x": 12.5,"y": 3.0},"o": {"x": 1.0,"y": 1.0,"z": 0.0},"t": "-Infinity","N": {"width": 3.0,"height": 2.5,"fuel_percent": 1.0},"T": {"color_tex": "_","shape_tex": "_"}}  ◆"N"width：宽度，决定宽度，物理  ◆(0,height/2)  ◆  ◆■燃料箱║Fuel Tank  ◆{"n": "Base","p": {"x": 6.5,"y": 1.5},"o": {"x": 1.0,"y": 1.0,"z": 0.0},"t": "-Infinity","N": {"width": 4.0,"height": 3.0,"extra": 0.4,"fuel_percent": 1.0},"T": {"color_tex": "_","shape_tex": "_"}}  ◆  ◆(0,height/2)  ◆  ◆
+﻿══════前言══════
+══════主编的话══════
+本人是第一次编纂这种大型资料，有不足的地方还请各位多多包涵。在这里我要感谢圈内的许多大佬在本资料的编纂过程中提供的支持，为本书编纂提供帮助（无论大小）的人员我已写在页首，在这里就不多做赘述。
+有句话说的好：“一流的作家写不出二流的作品”，但我这个二流的玩家正在尝试整理出一流的资料。我虽是个二流玩家，但却是这个圈子里目前最有可能也是最合适编写这种大跨度资料的人之一。我现在想的是：这种类型的资料现在是空缺的，鉴于圈内当下技术混乱无章的现状，因此必须得有这么一篇资料，以统一技术的叫法，并且为想要系统性学习技术的人提供指导，内容可能不能做到尽善尽美，但起码能起到灯塔的指引作用，让想进行系统性学习的人不至于像无头苍蝇一样乱创，到处东问一点西问一点。而对于基业大成者，阅读系统性的资料想必也会有所裨益。编者在此恳求，如有看到错误或者不当的地方请带着详细的数据更正错误，编辑部将不胜感激。
+编辑本资料的初衷同上文所述，是见全圈未有大体量，大范围覆盖的详尽资料/总结。因此萌生出了编纂一个涵盖各方各面的较为详尽资料的想法。而对于我自身有可能能成功编纂这样一篇资料的原因是，我本人在SFS中各个玩法所涉猎范围是较广的，且具有一定的深度与自学能力，因此我推断我在各个方面大佬的帮助下能够整合出一篇拥有详细数据，理论与实验支撑的资料。而事实也确实如此，在面对一些前沿科技与自学极难弄懂的条目时（如一体化磁推与拓展包中的地形数据），是在这方面领域的专家为我提供的模型/数据/实验支持。在这方面的编纂中，我仅是起到润滑剂与螯合剂的作用而已。
+关于《万航全典》：本作的编撰主旨是以游戏为核心。在编撰初期有人提到了将现实中的公式与原理引入本作，我给出的答复与计划是这样的：这个资料我的计划是专注于游戏本身，但因为游戏中的代码世界与现实不可能相同，所以还是以游戏内为准。而现实中的公式原理，能参考运用的只要是我知道的或者是我不知道被你们所提到的，都会加进去。因此，游戏中出现与现实不符的物理现象时我将会指出，并且将现实中的公式/定理加入附表中以供对照区分。
+
+══════阅前须知══════
+重要：
+本作的数据收集版本为移动端：1.4.06，1.5.10.2，1.5.10.5，PC端：1.5.10.2。
+讨论范围为原版以及相应破解版。不讨论如宇航员版本等改版。
+本作使用翻译与附表中的中文语言包统一。
+
+对于阅读本作：本作由于分类关系，难度并不呈线性增长。对于阅读本作可能的目的人
+群，我在这里提供一些阅读建议：
+①拥有一定技术基础想要查漏补缺者：
+  结合目录快速对照检索所需查看条目，在子条目中学习时结合注释与附表。
+②缺乏经验前来学习者：
+  先将基础的『文件知识相关』与『零件细则』学习完毕之后，参考附表中所给出的
+  难度级别划分自行决定学习顺序。
+③全知全能的佬东西：
+  随便看看吧，或许能有新发现呢？如果有错误或缺漏欢迎指正添补。
+
+
+══════主要玩法概述══════
+《航天模拟器》（《SpaceFlightSimulator》）（以下简称SFS）是一款2D的航天模拟策略类游戏，其以高度自由的组装玩法而著称。其玩法人群可主要分为以下几个玩法与流派：
+1：以追求高仿真度，美观性为目标的玩法被称之为仿造。其有模仿现实的物体与
+   模仿/创造虚拟的物体之分。前者被称为“实物仿造”（简称“实仿”），后者被称为“虚物仿造”（简称“虚仿”），可通简称为“仿”。其玩家所组成的社区/团体被称作“仿圈”。
+   这是SFS目前被选择最多的游玩方式，有着近乎无限的自由度。
+2：以利用特性制造具有对造物破坏能力的物品为目标的玩法被称作“军事模拟”（简称“军”）。同理，其玩家所组成的社区/团体被称为“军圈”。
+   这种玩法被认为是SFS中未开发内容最多，也是最难的玩法。
+3：以仿真操作为目标的玩法及人群无特殊称呼。
+   这种玩法倾向于模拟实际中的航天操作，有着一定的操作门槛。
+4：以开发拓展包为目标的玩法及人群无特殊称呼。
+   这种玩法是以创造拓展包为核心。其改需要具备一定的数学&物理知识。
+
+以上：无论哪种玩法都需要具备一定的耐心，可以说想要玩好SFS，耐心是必要的。各种主流玩法之间也并非冲突对立，很多技术比如『航行技术』在前三种玩法之中是通用的。你可以选择你所想主修的方向，也可以将多种玩法相互结合以创造你心中理想的造物。正于此地，愿你找到你想走的路。
+
+临时注释：绿色为待索引 紫色为学术造假
+          黄色为待补充 红色为胡编乱造
+          青色为待转移
+
+═══════文件知识相关═══════
+══════关于文件浏览══════
+对于游玩SFS，改文件不是必须的，但是学会改文件能够让你在创作中拥有更高的灵活度。在本作接下来的章目中，将会出现极多的改文件内容。因此，如需无障碍的阅读本作全部内容，学会查看与修改文件是必须的。查看文件推荐使用Es与MT文件管理器，Android版本在11以下也可用自带的文件管理。但对于高版本Android系统（Android10开始无法直接利用MT/Es文件管理器查看文件；Android11开始无法利用自带的文件管理查看文件）查看文件在不给予root权限的情况下需要用MT文件管理器+Shizuk授权的方式。在这里因为篇幅原因，直接引用B站上的Shizuku授权教程：
+https://b23.tv/ykGw7zN
+若无法打开请复制粘贴后使用浏览器打开视频。
+※在以下的文档中默认阅读者已经可以成功的打开data内文件！
+※文件全局使用半角字符，若加载报错请检查标点！（文本内容不限）
+══════目录中文件══════
+■SFS储存文件的路径如下：
+  /storage/emulated/0/Android/data/com.StefMorojna.SpaceflightSimulator/
+※iOS系统为：我的iPhone/com.StefMorojna.SpaceflightSimulator/
+※1.4汉化版的末级名称可能会略有出入
+■QQ储存下载文件的路径如下：
+ /storage/emulated/0/Android/data/com.tencent.mobileqq/Tencent/QQfile_recv/
+可复制后将其粘贴在MT文件管理器上方路径直接打开，也可逐级打开。
+（文件的初始位置位于/storage/emulated/0/）
+※对于PC，文件存储路径与移动端存在差异，以读者实际存储位置为准。
+
+ 接下来是解释SFS储存文件的文件夹内文档的所含内容：
+■移动端1.5版本：
+┏cache
+┃┣UnityShaderCache
+┃┃┣XXX* /unity着色器缓编译缓存
+┃┃┗version.txt /着色器缓存版本标识
+┃╚Rocket.png /分享火箭后生成
+┗files
+  ┣Cache
+  ┃┗Translations
+  ┃  ╚links /语言包链接库（选择语言概率生成）
+  ┣Custom Solar Systems /本地星系系统
+  ┃┗Example /示例星系-原版太阳系
+  ┃  ┣Heightmap Data /地形数据
+  ┃  ┃┗XXX.txt* /地形数据文件
+  ┃  ┣Planet Data /星球数据
+  ┃  ┃┗XXX.txt* /星球数据文件
+  ┃  ┣Texture Data /星系贴图资源
+  ┃  ┣Import_Settings.txt /星系加载设置
+  ┃  ┣Space_Center_Data.txt /发射台数据
+  ┃  ┗Version.txt /星系版本号
+  ┣Custom Translations /本地语言包
+  ┃┣Example.txt /示例语言包
+  ┃╚导入的语言包*
+  ┣il2cpp /代码语言转换相关
+  ┃┣Metadata 
+  ┃┃┗global-metadata.det /代码混淆映射表
+  ┃┣Resoureces /预编译资源
+  ┃┗unity.ver /unity版本
+  ┣Logs /日志
+  ┃┣counter.txt /事件计数器
+  ┃┗XXX.txt* /运行日志
+  ┣Saving /游戏数据
+  ┃╠Blueprints /蓝图储存文件夹（保存第一个蓝图后生成）
+  ┃┃╚保存的蓝图*
+  ┃┃  ╠Blueprints.txt /蓝图文件
+  ┃┃  ╚Version.txt /版本号
+  ┃┣Notifications /通知内容
+  ┃┃┣TimeTracker /时间敏感数据
+  ┃┃┃┣First_Has_Any_Expansion.txt /首次打开拓展内容时间戳
+  ┃┃┃┣First_Has_Full_Bundle.txt /首次拥有完整捆绑包时间戳
+  ┃┃┃╠First_Seen_Shop.txt /首次查看商店（查看商店后生成）
+  ┃┃┃╠Last_Seen_Shop.txt /最后一次查看商店（查看商店后生成）
+  ┃┃┃┗Playtime.txt /游玩时长统计
+  ┃┃┣ask_notifications.txt /通知权限请求记录
+  ┃┃╠Ask_Rate_n* /尚不明确
+  ┃┃╠Converted_Planets /异常记录（出现非正常值后生成）
+  ┃┃┣Development_Update.txt /未读更新查阅
+  ┃┃╠Feature_Use.txt /功能使用统计（游玩后生成）
+  ┃┃┣Has_Ran_App.txt /首次运行标记
+  ┃┃┣InstalledVersion.txt /当前游戏版本
+  ┃┃┣Last_Played_Version.txt /最后游玩版本
+  ┃┃┣Played_Previously.txt /非首次运行标识
+  ┃┃┣purchase_debug.txt /购买日志
+  ┃┃╠Revent_Functionality.txt /版本回退日志（游玩后生成）
+  ┃┃╠Seen_Push_Notifications.txt /通知已查阅标识（查阅通知后生成）
+  ┃┃┣Translation_Example_Version.txt /翻译示例版本
+  ┃┃╠Tut_Basic_Build.txt /基础建造教程完成标记（游玩后生成）
+  ┃┃╠Tut_InfiniteBuildArea.txt /自由建造区域解锁标记（游玩后生成）
+  ┃┃╚Tut_Launch.txt /发射教程完成标记（游玩后生成）
+  ┃┣Seetings /设置
+  ┃┃╠AudioSettings.txt /声音设置（修改声音后生成）
+  ┃┃╠LanguageSettings_2.txt /语言设置（修改语言后生成）
+  ┃┃╠SandboxSettings.txt /作弊设置（作弊位于设置界面的版本生成，可带至高版本）
+  ┃┃╚VideoSettings.txt /画面设置（修改画面设置相关后生成）
+  ┃╚Worlds /世界（创建世界后生成）
+  ┃  ╠保存的世界*
+  ┃  ┃╠Backup/备份
+  ┃  ┃┃╠Backup_n* /具体备份文件
+  ┃  ┃┃┃╠Achievements.txt /航天器成就
+  ┃  ┃┃┃╠Branches.txt /发射日志
+  ┃  ┃┃┃╠CareerState.txt /生涯数据（仅在生涯模式下生成）
+  ┃  ┃┃┃╠Challenges.txt /挑战完成状况
+  ┃  ┃┃┃╠Rockets.txt /造物数据
+  ┃  ┃┃┃╠Version.txt /版本号
+  ┃  ┃┃┃╚WorldState.txt /全局游戏状态  
+  ┃  ┃┃╚RevertPointer.txt /备份计数
+  ┃  ┃╠BlueprintPersistent /世界在建蓝图
+  ┃  ┃┃╠Blueprint.txt /蓝图文件
+  ┃  ┃┃╚Version.txt /版本号
+  ┃  ┃╠Persistent /主存档
+  ┃  ┃┃╠Achievements.txt /航天器成就
+  ┃  ┃┃╠Branches.txt /发射日志
+  ┃  ┃┃╠CareerState.txt /生涯数据（仅在生涯模式下生成）
+  ┃  ┃┃╠Challenges.txt /挑战完成状况
+  ┃  ┃┃╠Rockets.txt /造物数据
+  ┃  ┃┃╠Version.txt /版本号
+  ┃  ┃┃╚WorldState.txt /全局游戏状态
+  ┃  ┃╠Quicksaves /快速保存
+  ┃  ┃┃╠保存的进度*
+  ┃  ┃┃┃╠Achievements.txt /航天器成就
+  ┃  ┃┃┃╠Branches.txt /发射日志
+  ┃  ┃┃┃╠CareerState.txt /生涯数据（仅在生涯模式下生成）
+  ┃  ┃┃┃╠Challenges.txt /挑战完成状况
+  ┃  ┃┃┃╠Rockets.txt /造物数据
+  ┃  ┃┃┃╠Version.txt /版本号
+  ┃  ┃┃┃╚WorldState.txt /全局游戏状态
+  ┃  ┃┃╚display_order.ordr /排序索引
+  ┃  ┃╠RevertLaunch /发射前备份
+  ┃  ┃┃╠Achievements.txt /航天器成就
+  ┃  ┃┃╠Branches.txt /发射日志
+  ┃  ┃┃╠CareerState.txt /生涯数据（仅在生涯模式下生成）
+  ┃  ┃┃╠Challenges.txt /挑战完成状况
+  ┃  ┃┃╠Rockets.txt /造物数据
+  ┃  ┃┃╠Version.txt /版本号
+  ┃  ┃┃╚WorldState.txt /全局游戏状态
+  ┃  ┃╚WorldSettings.txt /世界设置
+  ┃  ╚display_order.ordr /排序索引
+  ┣Unity /Unity引擎相关数据目录  
+  ┃ ┗37d4a9e6-dee9-461c-a7f9-24b5fd73821e  
+  ┃  ┣Analytics /用户行为数据  
+  ┃  ┃┣ArchivedEvents /历史事件存档
+  ┃  ┃┣config /分析功能配置参数  
+  ┃  ┃┗values /分析指标数值存储 
+  ┃  ┗PerformanceReporting /性能监控报告
+  ╚UnityServicesCachedMetrics /Unity服务缓存指标（生成条件尚不明确）
+
+■移动端1.4版本：
+┏cache
+┃┣UnityShaderCache
+┃┃┣XXX* /unity着色器缓编译缓存
+┃┃┗version.txt /着色器缓存版本标识
+┃╚Rocket.png /分享火箭后生成
+┗files
+  ┣Resources
+  ┃┣ Planet Data /星球数据
+  ┃┣Textures /星系贴图资源
+  ┣Saving
+  ┃╠Blueprints /蓝图存放文件夹（保存蓝图后创建）
+  ┃┃╚保存的蓝图.bp*
+  ┃┗Worlds /世界数据
+  ┃  ┗main 
+  ┃   ┣ Quicksaves
+  ┃   ┃╚保存的进度.qks* /快速保存存档（创建快速保存存档后创建）
+  ┃   ╚Persistant.qks /主存档（游玩并发射后创建）
+  ┣Unity /Unity引擎相关数据目录  
+  ┃ ┗37d4a9e6-dee9-461c-a7f9-24b5fd73821e  
+  ┃  ┣Analytics /用户行为数据  
+  ┃  ┃┣ArchivedEvents /历史事件存档
+  ┃  ┃┣config /分析功能配置参数  
+  ┃  ┃┗values /分析指标数值存储 
+  ┃  ╚PerformanceReporting /性能监控报告
+  ╚UnityServicesCachedMetrics /Unity服务缓存指标（生成条件尚不明确）
+
+■PC端：
+
+※在上表中：①文件名后标注“*”的意为不止一个此类型的文件。
+            ②文件名为XXX的意为无法具体确定文件名称，n为文件序号。
+            ③表中文件名为中文的（如{导入的语言包}）为玩家自行导入/创建的文件，
+              名称是玩家所取。
+            ④关系链中“╠”“╚”等空心符号意为该文件在
+              {com.StefMorojna.SpaceflightSimulator}创建之初并无，需要在满足释
+              义后方括号内的条件后才会创建。
+
+
+════不适于后续章节分类中的重要文件细则════
+※下文中所解析文件前方均以“--”代替，PC端为{com.StefMorojna.SpaceflightSimulator}
+{/storage/emulated/0/Android/data/com.StefMorojna.SpaceflightSimulator/}
+════移动端1.5════
+■--files/Custom Translations：
+  此为语言包所导入目录。当从QQ等获得语言包后，将语言包导入此文件夹后，游戏设
+  置内语言选项中即可选择所导入语言包。
+  
+①下面以MT文件管理器为操作软件，从QQ获得语言包举例导入。
+    1.下载好语言包后，在其中一个窗口内逐条/粘贴打开QQ下载文件储存目录
+ {/storage/emulated/0/Android/data/com.tencent.mobileqq/Tencent/QQfile_recv/}
+      另一个窗口打开{--files/Custom Translations}
+    2.长按语言包，选择“移动-＞”。（1-1-1）
+    ※请检查：导入该目录文件下的语言包必须为.txt文
+      件才能正常运行。语言的更改可能需要先切换回原
+      版英文后再切换为所需语言包，部分版本需选好语
+      言包后退出游戏重进。
+  
+②其中的Example.txt为当前游戏版本的语言翻译其
+内的各项内容对照可直接打开已经做好的语言包查
+看。也可自行对照翻译。将等号右边的英文替换为所
+需翻译语种并保存后，一个语言包就做好了。（1-1-2）
+对于可输入文本，在文字前方和后方加入前后缀可改
+变字体颜色和大小。这里给出规律和示例：前缀格式
+为<Size＝m>；<color＝M>；<i>，相应后缀为：          ▲1-1-1       ▲1-1-2
+</size>；</color>；</i> ，<size＝m>的作用是改变字号，（字体大小）其中m为
+数字，含义为字号；<color＝M>的作用是改变字体颜色，M为颜色所对应的英文，如
+“red”；<i>的作用是使字体倾斜。图1-1-3为前后缀所对应效果展示。其中，可改变
+颜色种类仅有图示中的颜色。有“/”的则是前后两个单词为同一种颜色效果。
+
+※前缀与后缀单独出现时无法改变字号或颜色，且前/后缀会出现在文
+本中。在部分界面的文本中，前后缀与文本内容需空格，若识别异常请
+检查空格。若需同时更改多项设置，以文本内容为对称轴，前后缀必须
+成对称关系，若顺序颠倒，全局文本中的前后缀将无法正确识别而出现
+在文本中。若前后缀内为不可用的颜色/字符串，字体将不会发生任何
+变化。游戏内可输入文本（如火箭名称）会出现字符串数量限制，因此
+有可能无法在游戏内改变其字体。
+        
+                                                                        
+
+
+                                                                        ▲1-1-3
+■--files/Saving：
+Ⅰ  /Settings：
+  ①/AudioSettings.txt：
+此文件存储的是全局音频设置，格式为：
+{"soundVolume": 1.0,"musicVolume": 1.0}
+soundVolume：音效大小，取值范围为[0,1]，改动为大于1时等效为1，
+               小于0时等效为0；
+musicVolume：音乐大小，取值范围为[0,1]，改动同soundVolume。
+  ②/LanguageSettings.txt：
+此文件存储的是全局语言设置，格式为：
+{"name": "1.5.10.2汉化by暝翮","custom": true}
+name：正在应用的语言包名称；
+custom：语言包来源，true为本地语言包，false为预制语言包。
+  ③/VideoSettings.txt：
+此文件内存储的是画面设置，格式为：
+{"freeOrientation": false,"fps": 144,"menuScale": 0.74999994, "menuOpacity": 1.0,"cameraShake": true,"orbitLinesCount": 3,"FXAA": true}
+freeOrientation：屏幕旋转：开为true，关为false；
+fps：帧率：共有30、60、75、90、100、120、144七个级别可选，强行改动为非可
+           选帧率将被重置为30；
+menuScale：UI（界面）尺寸：
+            取值范围为[0,1]，改动为大于1时等效为1，小于0时等效为0；
+menuOpacity：UI（界面）不透明度：取值范围[0,1]，改动同menuScale；
+cameraShake：屏幕晃动：开为true，关为false；
+orbitLinesCount：轨道线显示详细程度（数量）：共有3、4、5、6、7、8、9、10七个
+级别可选，级别越高，轨道显示详细程度越高，改动同menuScale；
+FAXX：抗锯齿：开为true，关为false。
+ ※若从文件内更改设置，应用所改设置需重启游戏。对于拖条设置，如果被改为非预设值
+   将会被重置为初始值。
+
+Ⅱ  /Worlds/保存的世界：
+
+  ①/BlueprintPersistant/Blueprint.txt：
+此文件为当前世界中在建蓝图的数据，其数据修改和其余的{Blueprint}相同，在后面
+的章节中会介绍其性质。
+
+  ②/Persistent & /Quicksaves/保存的进度 & /RevertLaunch & /Backup/Backup_n：
+这四个文件夹中子目录为相同性质，合并讲解。
+⒈Achievements.txt：
+  此文件夹内储存的是航天器所达到的成就，其格式为：
+      [{"type": a,"value": b,"planet": X},{"type": m,"value": n,"planet": Y}]
+      其中：type为成就类型，value为其相关值，planet为成就完成所在对象，如Moon。
+      下划线部分为部分成就所特有，例如：环绕轨道，当成就类型为与所在地无关的类
+      型时，下划线部分将不会出现。以上示例为两个成就，其为基本格式，用“,”隔开，
+      此存储的是全局航天器所完成成就，多个航天器所完成成就不重复计入。
+   ⒉Branches.txt：
+     此文件内存储的是航天器日志
+   
+   ⒊CareerState.txt：
+     此文件内存储的是生涯模式中解锁的科技，其完整格式为：{"funds":25.0,"unlocked_Parts":["HeatShield_0_0","EngineValiant_0_0"],"unlocked_Upgrades":["Staging","Side Boosters 1","Liquids 1","Powerful Rocketry","Landing"]}
+     其中，“funds”为资金，单位为百万，图
+     1-1-4为解锁部件(unlocked_Parts)与解
+     锁升级(unlocked_Upgrades)所对应的游
+     戏科技树节点。
+
+   ⒋Challenges.txt：
+     此文件内存储的是世界全局所达成的挑
+     战。其格式为：
+["Liftoff_0","Reach_10km","Reach_30km",
+"Reach_Orbit"] 其中内容为英文原文的挑战
+     名称，以“,”分隔，拓展星球的挑战内容
+     自动生成。                                                   
+                          1-1-4            1-1-5
+   ⒌Rockets.txt：
+     此文件内存储的是世界中现有的火箭数据。这里以图1-1-5火箭举例，零件摆放顺序
+     为依次从上至下，当引擎关闭，节流阀关闭，并调节至80%，快捷栏内容如图所示。
+     其内容为：
+[{"rocketName":"","location":{"address":"Earth","position":{"x":364.9998779296875,"y":630031.353647232},"velocity":{"x":-7.0054784195860975E-09,"y":5.7948881249103579E-09}},"rotation":359.97644,"angularVelocity":7.73473E-08,"throttleOn":false,"throttlePercent":0.802944541,"RCS":false,"parts":[{"n":"Parachute","p":{"x":0.0,"y":0.0},"o":{"x":1.0,"y":1.0,"z":0.0},"t":"-Infinity","N":{"deploy_state":0.0,"animation_state":0.0,"temperature":"-Infinity"}},{"n":"Capsule","p":{"x":0.0,"y":-2.0},"o":{"x":1.0,"y":1.0,"z":0.0},"t":"-Infinity","N":{"temperature":"-Infinity"}},{"n":"HeatShield","p":{"x":0.0,"y":-2.0},"o":{"x":1.0,"y":1.0,"z":0.0},"t":"-Infinity","N":{"width_original":2.0,"width":2.0,"shield_temp":"-Infinity"}},{"n":"Separator","p":{"x":0.0,"y":-3.0},"o":{"x":1.0,"y":1.0,"z":0.0},"t":"-Infinity","N":{"width":2.0,"width_b":2.0,"height":0.42000007629394531,"height_max":4.0,"force_percent":0.5},"T":{"color_tex":""}},{"n":"FuelTank","p":{"x":0.0,"y":-7.0},"o":{"x":1.0,"y":1.0,"z":0.0},"t":"-Infinity","N":{"width_original":2.0,"width_a":2.0,"width_b":2.0,"height":4.0,"fuel_percent":1.0},"T":{"color_tex":"_","shape_tex":"_"}},{"n":"EngineHawk","p":{"x":0.0,"y":-7.0},"o":{"x":1.0,"y":1.0,"z":0.0},"t":"-Infinity","B":{"engine_on":true,"heat_on__for_creative_use":true,"gimbal_on":true}}],"joints":[{"a":0,"b":1},{"a":1,"b":2},{"a":2,"b":3},{"a":3,"b":4},{"a":4,"b":5}],"stages":[{"stageId":1,"partIndexes":[1]},{"stageId":2,"partIndexes":[2]},{"stageId":3,"partIndexes":[3,5]}],"staging_EditMode":false,"branch":0}]
+      其中：
+     ◆rocketName：当前分节所记录造物的名称；
+     ◆location：该造物所在的位置：
+      ┣address：所处引力范围的星球，
+      ┗position：具体位置：以所处引力范围的星球中心为原点建立平面直角坐标系：
+        ┣x：造物于x轴上对应的坐标
+        ┗y：造物与y轴上对应的坐标；
+     ◆velocity：沿当前轨道的速度：
+      ┣x：造物于x轴方向上的分速度
+      ┗y：造物于y轴方向上的分速度
+           游戏中速度表中的速度为这两个速度的矢量和；
+     ◆rotation：该造物的角度（以逆时针方向计）；
+     ◆angularVelocity：该造物旋转的速度，其单位为°/s（度每秒）（以逆时针方向计，
+                      负数的旋转方向为顺时针）；
+     ◆throttleOn：节流阀开关状态，开为true，关为false；
+     ◆throttlePercent：节流阀阀门大小，正常取值范围为[0,1]；
+     ◆RCS：单元推进系统开关状态，开为true，关为false；
+     ◆parts：该造物的零件组成，其内部格式同blueprint，此处略过；
+     ◆joints：链接顺序，其中a为父节点，b为子节点，为树状链接顺序（其内序号为上
+             文中parts中的零件对应出现顺序）；
+     ◆stages：该造物快捷栏内所含部件，其中stageld为快捷栏顺序，partlndexes为该
+              级快捷栏所含部件（其内序号为上文中parts中的零件对应出现顺序）；
+     ◆staging_EditMode：快捷栏编辑状态，开为true，关为false；
+     ◆branch：索引至branch中该造物对应日志。
+     ※最外层的方括号“[]”为数组引用，内部第一层花括号“{}”为造物对象，各层花括号用
+       英文的逗号“,”链接。因此，当需转移/导入造物时，请注意格式应为：[{ },{ },...]
+
+    ⒍version.txt：
+      该存档的版本号（只可从低版本迁移至高版本）
+
+    ⒎WorldState.txt:
+      此文件内存储的为世界内状态，其格式为：
+{"worldTime":1000229.3015892979,"timewarpPhase":0,"mapView":false,"mapPosition":{"x":365.02282507980334,"y":630026.09425703716,"z":409516.96126707416},"mapAddress":"Planet:Earth","targetAddress":"null","playerAddress":"Rocket:0","cameraDistance":12.0}
+      其中：
+     ◆worldTime：发射运行时间，起始值为1000000.0，在蓝图界面点击发射加载完成
+      后，每过一秒这个值加1（若时间加速，按加速后时间计入）；
+     ◆timewarpPhase：时间加速阶级。时间加速度阶级最高为464（共465个阶级），加
+      速度阶级递增不包括阶级0~2（阶级0、1、2，分别为1x、2x、3x）的时间加速与
+      阶级关系为：n为阶级数，w＝n-2（3≤n≤464），T为时间加速度，运算#w/3#表示
+      计算w/3后结果向下取整：T=5w-#w/3#*4#w/3# 在游戏内可达到的加速上限阈值与
+      星系内最大公转周期相关，星系内最大公转周期星球公转周期越大，可在游戏内直接
+      达到的时间加速也就越大。其关系为：n定义同上，a为最大周期星球的长半轴，g
+      为其中心天体的重力加速度,r为其中心天体的半径:n={㏒₄.₇₂√[4π2a3/(576gr2)]}+2
+      计算结果向下取整。（由于浮点运算与向下取整，计算结果和实际情况有小于千分之五的概率出现阶层误差）
+时间加速通过直接修改文件可以突
+      破阈值限制，且修改后可自由调节（当加速度低于上限阈值后需重新修改）。当加速
+  度达到5x1018（5E+18，第31个阶级）前后，云层转动将停止，达到5x1038（5E+38，
+  第61个阶级）后，星球将会因为轨道计算错误而堆叠在一起，当加速度超过第464
+  个阶级（1x10308（1E+308））后，加速度将变为Infinity，此时worldTime时间戳计
+  算将错误，变为NaN。
+     ◆mapView：地图视角开关状态，开为true，关为false；
+     ◆mapPosition：地图视角设置，坐标系以mapAddress中的目标为原点，xy轴单位
+                    为m；z为地图镜头距离（值越大视野越大），游戏内视角缩放上限
+                    与星系大小相关；
+     ◆mapAddress：地图视角相对参考系，表现为视野跟随，目标可以是造物；
+     ◆targetAddress：导航目标，目标名称为选中星系名称或造物序号（日志序号），null
+                     为无目标。
+     ◆playerAddress：当前控制的造物序号（日志序号）
+     ◆cameraDistance：镜头距离（值越大视野越大），游戏内缩放上限与星系大小相关。
+
+  ③/WorldSettings.txt：
+    此文件存储的是当前存档的全局设置，一个新建原版太阳系存档的格式为：
+{"solarSystem":{"name":""},"mode":{"mode":0,"allowQuicksaves":true},"difficulty":{"difficulty":0},"playtime":{"lastPlayedTime_Ticks":638824955182065480,"totalPlayTime_Seconds":10.0},"cheats":{"infiniteFuel":false,"noAtmosphericDrag":false,"unbreakableParts":false,"noGravity":false,"noHeatDamage":false,"noBurnMarks":false,"infiniteBuildArea":false,"partClipping":false}}
+其中：
+   ◆solarSystem：存档所用拓展包，当无名称时为默认太阳系。
+   ◆mode：游戏模式。
+     mode:
+     0为经典模式（常规模式）
+ 1为生涯模式（需要解锁科技树，无法作弊、改文件）
+ 2为沙盒模式（与经典模式的区别在于多了固推）
+ ≥3为挑战模式（与经典模式的区别在于无法作弊）
+※每个版本拥有的模式不尽相同，若对应数字不是对应模式，则说明当前版本不存在对
+  应的模式，数值大于当前版本最大模式有效值时，认为其为最大有效值对应的模式。
+  生涯模式与挑战模式可以通过修改本文件的方式获得作弊，但是游戏模式将强制改为
+  经典模式，固推将会保留，但在重进游戏后消失。部分版本可在创建世界时选择挑战
+  模式，生涯模式需在创建世界时将世界命名为Test Career或在本文件内修改调出，
+  沙盒模式仅可在本文件内修改调出。
+     allowQuicksaves:快速存档设定，true为允许存档，false为禁止。
+   ◆difficulty：难度设定。0为normal（普通），1为hard（困难），2在PC中为RSS（真
+              实太阳系），但在1.5.10.5以下的移动端中，大于等于2的数字为普通。
+   ◆playtime：
+     lastPlayedTime_Ticks：距离上次游玩时间，单位为tick（1s＝1x107tick）。
+数值为上次退出游戏时记录的系统时间。
+     totalPlayTime_seconds：总游玩时间，单位为秒，初始值为0。
+   ◆cheats：作弊开关状态，开均为true，关均为false
+     infiniteFuel：无限燃料；              noHeatDamage：无热效应伤害；
+     noAtmosphericDrag：无大气阻力；   noBurnMarks：无烧蚀痕迹；
+     unbreakableParts：牢不可破的部件；  infiniteBuildArea：无限的建造区域；
+     noGravity：无重力；                 partClipping：部件堆叠。
+
+
+════移动端1.4════
+■--Saving/Worlds/main：
+  Quicksaves/保存的进度.qks & Persistant.qks：
+  这两个文件为相同性质，合并讲解：
+  
+════PC端════════════蓝图细则════════
+※本章所描述对象为全局的{blueprints/蓝图名称/ blueprint.txt & 蓝图名称.bp}
+※本文所描述的为1.5高版本的蓝图格式，1.4和1.5低版本略有不同，但相差不大。
+══════蓝图导入══════
+※下面以MT文件管理器为操作软件，从QQ获得蓝图文件举例导入
+蓝图存储的路径为：
+/storage/emulated/0/Android/data/com.StefMorojna.SpaceflightSimulator/files/Saving/Blueprints/
+在MT文件管理器的其中一个窗口打开这个路径，
+另一个窗口则打开QQ存储下载文件的目录：
+/storage/emulated/0/Android/data/com.tencent.mobileqq/Tencent/QQfile_recv/
+1.4版本的蓝图一般直接为.bp格式出现，对于1.5的则是压缩包。（2-1-1）
+如果为.bp格式的文件，直接长按后选择移动即可。
+对于压缩包则需要先确认所解压文件的目录级别：
+1.4版本找到.bp格式级别的文件，长按后选择解压到另一窗口路径；（2-1-2）
+1.5版本找到blueprint.txt&version.txt文件的上一级文件夹，长按后选择解压到另一窗路径（2-1-3）
+
+       ▲2-1-1                     ▲2-1-2                    ▲2-1-3
+※若导入不正确，将会出现无法识别/加载蓝图的情况。
+※蓝图在1.4版本中为.bp格式。如有需要，需在1.5~1.5.4中用同导入1.4的方法二次保存转至更高版本。无法通过将.bp格式文件修改后缀为.txt并与Version文件组成文件夹的方式将.bp蓝图升至高版本。
+══════隐藏条目══════
+※这里仅讨论可正常调出的文件内容
+■电池：
+  这是1.4版本中遗留下来的零件文件，其零件格式为：
+ 
+    {
+      "n": "Placeholder Battery",
+      "p": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "o": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "t": "-Infinity",
+      "N": {
+        "width": 1.0
+      }
+    }
+
+■RTG（放射性同位素发电机）
+  这是1.4版本中遗留下来的零件文件，其零件格式为：
+
+    {
+      "n": "Placeholder RTG",
+      "p": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "o": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "t": "-Infinity"
+    }
+
+电池与RTG（名称也显示电池）贴图模型如图2-2-1所示（左为RTG，右为电池），无任何特殊功能。如需加入蓝图中可将上述代码替换任意蓝图中的任意零件；也可在前后加入“,”插入；或直接保存附表中的蓝图，需要时用“融合”加入在建蓝图。
+
+
+■烧痕：
+  这是从{Worlds/~/Rockets}中，再入后拥有烧痕的零件中获得的，并未被刻意隐藏。
+
+      "burns": {
+        "angle": 0.0,
+        "intensity": 0.0,
+        "x": 0.0,
+        "top": "",
+        "bottom": ""
+      }
+
+其为单个零件中的子级代码，只作用于所属零件。导入后格式如图2-2-2所示。
+※以上代码导入时请务必注意格式！若加载报错请检查格式！
+
+          2-2-1▶                                               ◀2-2-2
+
+
+
+
+
+
+
+
+
+
+══════蓝图代码══════
+■零件通用：
+  一个完整的零件格式如下（整蓝图格式）：
+ {
+  "center": 10.0,
+  "parts": [
+    {
+      "n": "_",
+      "p": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "o": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 0
+      },
+      "t": "-Infinity",
+      "N": {},
+      "B": {},
+      "T": {
+        "fragment": "",
+        "color_tex": "_",
+        "shape_tex": "_"
+      },
+      "burns": {
+        "angle": 0.0,
+        "intensity": 0.0,
+        "x": 0.0,
+        "top": "",
+        "bottom": ""
+      }
+    }
+  ],
+  "stages": [],
+  "rotation": 0.0,
+  "offset": {
+    "x": 0.0,
+    "y": 0.0
+  },
+  "interiorView": false
+}
+
+串联格式为："center": 10.0,"parts": [{part1},{part2},{part3},...],"stages": [{"stageId": 1,"partIndexes":[a,b,c,...]},{"stageId": 2,"partIndexes":[a,b,c,...]}...]"rotation": 0.0,"offset": {"x": 0.0,"y": 0.0},"interiorView": false}
+其中：
+◆"center":10.0：蓝图原点x轴坐标：y坐标恒为正常蓝图大小的蓝图下边界。往左为正，
+ 可为负数，单位：m；
+◆"n":"_"：零件名称(name)：部分不同于游戏内英文显示名称；
+◆"p":{"x":0.0,"y":0.0}：零件位置(place)数据：其为笛卡尔坐标系(直角坐标系)，原点为
+center所确定的原点，单位：m；
+◆"o": {"x": 1.0,"y": 1.0,"z": 0.0}：方向(orientation)数据：x，y分别为贴图在对应轴上的
+长度倍数。对于大部分零件而言，更改仅为视觉上的缩放，但存在例外。零件在此项数值
+过大时会出现不同异常。z为旋转角度，单位为度。不同的零件有着不同的旋转中心，但
+都遵循一个规则：旋转中心为链接面的中点。在有多个可连接面的情况取位于最下方（零
+件自身的y轴负方向）的连接面中点；
+◆"t": "-Infinity"：零件当前温度（temperature）：于蓝图中更改时除NaN外无特殊影响。当零件在世界中被以蓝图形式创建时，温度数据将会重置为“-infinity”，NaN因其特殊性无法被更改，因此可用作保护零件不被再入效应损伤（仍会产生烧痕，在高于1.5.8的版本中无法忽视引擎产生的热）。被以Rockets形式加载时，温度将会正常加载此项中的数值。
+◆"N":{}：零件数值参数（Numeric）：其内为该零件的物理数据，如：实际宽度、高度、含油量、分离力等，更改后不仅会影响外观，还会影响其物理性质，如：长、宽、质量、自适应阶级、分离力度等。零件在此项数值过大时会出现不同异常。此数据对于每个零件都是不同的，对于各个零件的详细分解位于后文。
+◆"B":{}：零件行为参数（Behavior）：其内为该零件的行为数据，如：引擎开关/矢量开关、整流罩适应油箱、边缘分离等开关性设置。此数据对于每个零件都是不同的，对于各个零件的详细分解位于后文。
+◆"T": {"fragment": "","color_tex": "_","shape_tex": "_"}：零件贴图（Texture）：此条目为油箱，整流罩，鼻锥，分级器特有条目。["fragment": ""]为整流罩与测分离器特有，其为零件分片状态。后方双引号内为空是默认状态；为1是整体，无法分离；为left是左半片；为right是右半片。["color_tex": "_"]是零件颜色，["shape_tex": "_"]是零件形状，分级器无此项。其内可选项如图2-3-1。▼图2-3-1  ※点开图片查看高清原图
+
+◆"burns": {"angle": 0.0,"intensity": 0.0,"x": 0.0,"top": "","bottom": ""}:零件烧痕(burns):
+angle是烧痕的角度，以逆时针计，单位为度；intensity是烧痕强度，有效取值范围为[0,1.5]；x是烧痕中轴线位置；BYD老子编不下去了。
+◆"stages": []：该蓝图快捷栏内所含部件，以图2-3-2中火箭快捷栏举例（零件摆放顺序依次从上至下），其完整格式为：
+"stages": [{"stageId": 1,"partIndexes": [5]},{"stageId": 2,"partIndexes": [3]},{"stageId": 3,"partIndexes": [0]},{"stageId": 4,"partIndexes": [2]}]
+其中stageld为快捷栏顺序，partlndexes为该级快捷栏所含部件（其内序号为parts中的零件对应出现顺序）
+◆"rotation": 0.0：该蓝图整体旋转角度，顺时针计，单位为度。旋转30°，60°，90°，120°的效果如图2-3-3。当旋转角度不为0时，将跳出是否以当前角度发射的提示。若选择以当前角度发射，则发射时造物将会以当前旋转角度被创建。
+
+2-3-2▲                                        2-3-3▲
+◆"offset"{"x": 0.0,"y": 0.0}：蓝图整体偏移，将蓝图中所有零件在不改变零件本身p{x,y}数值的情况下将整个蓝图向对应方向平移。单位m。
+◆"interiorView":内部视图开关，开为true，关为false。
+
+══════零件介绍══════
+※此处格式为:（质量，重心，大气阻力待补）
+■翻译名║英文原名
+  ◆代码（删去分行，不带烧痕）
+  ◆代码条目解释
+  ◆零件数据：重心/质量/临界损坏速度/最高耐热/阻力系数*参考面积（重心表示法为：以零件"p"中零件的定位点为原点，建立直角坐标系，将重心以点标出。对于每种零件而言，其质心关于贴图所在的位置均相同，这里所示的均为游戏内最小原单位零件，对于不同尺寸的零件，将重心与尺寸大小比例对应即可。）（单位：m/t/kN）
+  ◆零件介绍
+  ◆附图：零件质心及定位点（黄色十字交叉部位为质心大致位置，绿点为定位点（格点）
+
+■降落伞║Parachute
+  ◆{"n": "Parachute","p": {"x": 0.5,"y": 0.0},"o": {"x": 1.0,"y": 1.0,"z": 0.0},"t": "-Infinity","N": {"deploy_state": 0.0,"animation_state": 0.0,"temperature": "-Infinity"}}
+  ◆"N"：
+deploy_state：降落伞部署状态，取值范围为[0,2]。过程为连续动画，1为半展开，2
+                  为全展开。大于2时效果等同于2，且当造物静止后降落伞不会被切割，
+                  不产生阻力。
+animation：降落伞收回动画，取值范围[0,2]，被加载时以当前值对应动画开始倒放开
+           伞动画。这个状态下的降落伞不产生阻力。
+temperature：温度，且独立于"t"计算。此处的temperature优先级高于"t",温度数据会
+             优先填写在此处。当此处和"t"同时存在温度数据且此处温度数值低于"t"
+             时,温度递增将会优先加在此处,当温度数值相等后,叠加于"t"处。
+  ◆(0,0.2)
+  ◆用于在有大气的星球降落时减速，最大开伞高度取决于当前星球设置。
+  ◆
+■载人舱║Capsule
+  ◆{"n": "Capsule","p": {"x": 10.0,"y": 0.0},"o": {"x": 1.0,"y": 1.0,"z": 0.0},"t": "-Infinity","N": {"temperature": "-Infinity"}}
+  ◆"N"：
+    temperature：温度，且独立于"t"计算。此处的temperature优先级高于"t",温度数据会
+                优先填写在此处。当此处和"t"同时存在温度数据且此处温度数值低于"t"
+                时,温度递增将会优先加在此处,当温度数值相等后,叠加于"t"处。
+  ◆(0,0.2)
+  ◆具有控制属性。（造物包含零件内无控制属性零件时无法操控）
+  ◆
+■隔热盾║Heat Shield
+  ◆{"n": "Heat Shield","p": {"x": 10.0,"y": 18.0},"o": {"x": 1.0,"y": 1.0,"z": 0.0},"t": "-Infinity","N": {"width_original": 2.0,"width": 2.0,"shield_temp": "-Infinity"}}
+  ◆"N"
+width_original：原始宽度，决定width数值。
+width：真宽度，决定真大小，物理性质。初始由width_original决定，在蓝图中修改
+      无效果，在Rockets.txt中修改后零件尺寸变为对应大小。影响的物理性质：质
+      量
+shield_temp：温度，且独立于"t"计算。此处的temperature优先级高于"t",温度数据会
+             优先填写在此处。当此处和"t"同时存在温度数据且此处温度数值低于"t"
+             时,温度递增将会优先加在此处,当温度数值相等后,叠加于"t"处。
+◆(0,0.05*width)
+◆用于保护造物免受再入大气时再入效应造成的高温损害，但温度过高时自身仍会被烧
+  毁。常位于载荷底部。
+◆
+■分级器║Stage Separator
+  ◆{"n": "Separator","p": {"x": 10.0,"y": 16.0},"o": {"x": 1.0,"y": 1.0,"z": 0.0},"t": "-Infinity","N": {"width": 2.0,"width_b": 2.0,"height": 1.42,"height_max": 4.0,"force_percent": 0.5},"T": {"color_tex": ""}}
+  ◆"N"
+    width：真宽度，决定大小，物理性质，width_b数值。影响的物理性质有：质量，
+width_b：级间上端宽度，初始由width或自适应决定，在蓝图中修改无效果Rockets.txt
+         中修改后级间上端尺寸变为对应大小。
+height_max：级间最大高度。
+force_percent：分离力。
+"T"
+color_tex：颜色贴图，可选项见
+  ◆(0,0.25)
+  ◆用于分离火箭间级。级间部分无碰撞。
+  ◆
+■燃料箱║Fuel Tank
+  ◆{"n": "Fuel Tank","p": {"x": 10.0,"y": 14.5},"o": {"x": 1.0,"y": 1.0,"z": 0.0},"t": "-Infinity","N": {"width_original": 2.0,"width_a": 2.0,"width_b": 2.0,"height": 1.0,"fuel_percent": 1.0},"T": {"color_tex": "_","shape_tex": "_"}}
+  ◆"N"
+width_original：原始宽度，决定width数值（此项为1时，零件长度为1m）。
+width_a：真底部宽度,决定真底部大小,物理性质。初始由width_original或自适应决
+        定,在蓝图中修改无效果,在Rockets.txt中修改后油箱底部尺寸变为对应大小。
+        影响的物理性质有：干质量，最大燃料量
+width_b：真顶部宽度,决定真顶部大小,物理性质。初始由width_original或自适应决
+        定,在蓝图中修改无效果,在Rockets.txt中修改后油箱顶部尺寸变为对应大小。
+        影响的物理性质有：干质量，最大燃料量
+height：高度，决定零件高度（此项为1时，零件高度为1m），物理性质。
+        影响的物理性质有：干质量，最大燃料量
+fuel_percent：燃料百分比，决定该零件内燃料百分数，取值范围为R，但仅能通过修
+             改的方式使其大于1，小于0。当此项小于0时，部件扣除相应燃料的质
+             量，当此值在小于0的状态下被消耗时，值会瞬间归0。当与其他燃料
+             箱相接时，自动对相接燃料箱内的燃料进行加法运算，并使运算后燃料
+             加权平均于各相接燃料箱内。
+"T"
+color_tex：颜色贴图，可选项见
+shape_tex：形状贴图，可选项见
+  ◆(0,hight/2)
+  ◆为引擎提供燃料，供给面为四条边（线）。当与其它燃料箱相接触时，（不包括对接后的
+    面接触）这些燃料箱的燃料将加权平均于各个燃料箱内（燃料百分数相等）以保证重心
+不发生变化。
+  ◆
+■侧向分离器║Side Separator
+  ◆{"n": "Side Separator","p": {"x": 10.5,"y": 13.0},"o": {"x": 1.0,"y": 1.0,"z": 0.0},"t": "-Infinity","N": {"force_percent": 0.5},"T": {"fragment": ""}}
+  ◆"N"
+force_percent：分离力百分数，1＝160kN，游戏内以0.1（8kN）为梯度调节。
+"T"
+fragment：分片状态。后方双引号内为空是默认状态；为1是整体，无法分离；为left
+          是左半片；为right是右半片。
+  ◆(0,0.5)
+  ◆用于分离助推器。当被削为半片后，被消去的部分虽然没有碰撞箱，但是具有链接特性。
+  ◆
+■鼻锥║Aerodynamic Nose Cone
+  ◆{"n": "Cone","p": {"x": 10.0,"y": 8.5},"o": {"x": 1.0,"y": 1.0,"z": 0.0},"t": "-Infinity","N": {"size": 2.0},"T": {"color_tex": "_","shape_tex": "_"}}
+  ◆"N"
+size：尺寸，影响大小（长宽等比缩放， 此项为1时，底部长度为1m，高度为1.125m），
+     物理性质。影响的物理性质有：质量
+  ◆(0,0.8)
+  ◆
+  ◆
+■鼻锥║Aerodynamic Nose Cone
+  ◆{"n": "Cone Side","p": {"x": 13.0,"y": 9.0},"o": {"x": 1.0,"y": 1.0,"z": 0.0},"t": "-Infinity","N": {"size": 3.0},"T": {"color_tex": "_","shape_tex": "_"}}
+  ◆
+  ◆(0.25,0.75)
+  ◆
+  ◆
+■鼻锥║Aerodynamic Nose Cone
+  ◆{"n": "Cone Round","p": {"x": 16.0,"y": 6.0},"o": {"x": 1.0,"y": 1.0,"z": 0.0},"t": "-Infinity","N": {"size": 3.0},"T": {"color_tex": "_","shape_tex": "_"}}
+  ◆
+  ◆
+  ◆
+  ◆
+■隔热盾║Heat Shield
+  ◆{"n": "Heat Shield Hollow","p": {"x": 7.5,"y": 6.5},"o": {"x": 1.0,"y": 1.0,"z": 0.0},"t": "-Infinity","N": {"width_original": 4.0,"width": 4.0,"shield_temp": "-Infinity"}}
+  ◆
+  ◆(0,-0.05*width)
+  ◆
+  ◆
+■燃料箱║Fuel Tank
+  ◆{"n": "Base Small","p": {"x": 12.5,"y": 3.0},"o": {"x": 1.0,"y": 1.0,"z": 0.0},"t": "-Infinity","N": {"width": 3.0,"height": 2.5,"fuel_percent": 1.0},"T": {"color_tex": "_","shape_tex": "_"}}
+  ◆"N"
+width：宽度，决定宽度，物理
+  ◆(0,height/2)
+  ◆
+  ◆
+■燃料箱║Fuel Tank
+  ◆{"n": "Base","p": {"x": 6.5,"y": 1.5},"o": {"x": 1.0,"y": 1.0,"z": 0.0},"t": "-Infinity","N": {"width": 4.0,"height": 3.0,"extra": 0.4,"fuel_percent": 1.0},"T": {"color_tex": "_","shape_tex": "_"}}
+  ◆
+  ◆(0,height/2)
+  ◆
+  ◆

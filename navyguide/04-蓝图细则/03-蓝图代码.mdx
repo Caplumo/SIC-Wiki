@@ -4,53 +4,54 @@
 
 一个完整的零件格式如下（整蓝图格式）：
 
-```
-{
-  "center": 10.0,
-  "parts": [
-    {
-      "n": "_",
-      "p": {
-        "x": 0.0,
-        "y": 0.0
-      },
-      "o": {
-        "x": 1.0,
-        "y": 1.0,
-        "z": 0
-      },
-      "t": "-Infinity",
-      "N": {},
-      "B": {},
-      "T": {
-        "fragment": "",
-        "color_tex": "_",
-        "shape_tex": "_"
-      },
-      "burns": {
-        "angle": 0.0,
-        "intensity": 0.0,
-        "x": 0.0,
-        "top": "",
-        "bottom": ""
-      }
-    }
-  ],
-  "stages": [],
-  "rotation": 0.0,
-  "offset": {
-    "x": 0.0,
-    "y": 0.0
-  },
-  "interiorView": false
-}
-```
+<pre>
+  <code>&#123;</code>
+  <br /><code>  "center": 10.0,</code>
+  <br /><code>  "parts": [</code>
+  <br /><code>    &#123;</code>
+  <br /><code>      "n": "&#95;",</code>
+  <br /><code>      "p": &#123;</code>
+  <br /><code>        "x": 0.0,</code>
+  <br /><code>        "y": 0.0</code>
+  <br /><code>    &#125;,</code>
+  <br /><code>    "o": &#123;</code>
+  <br /><code>      "x": 1.0,</code>
+  <br /><code>      "y": 1.0,</code>
+  <br /><code>      "z": 0</code>
+  <br /><code>    &#125;,</code>
+  <br /><code>    "t": "-Infinity",</code>
+  <br /><code>    "N": &#123;&#125;,</code>
+  <br /><code>    "B": &#123;&#125;,</code>
+  <br /><code>    "T": &#123;</code>
+  <br /><code>      "fragment": "",</code>
+  <br /><code>      "color&#95;tex": "&#95;",</code>
+  <br /><code>      "shape&#95;tex": "&#95;"</code>
+  <br /><code>    &#125;,</code>
+  <br /><code>    "burns": &#123;</code>
+  <br /><code>      "angle": 0.0,</code>
+  <br /><code>      "intensity": 0.0,</code>
+  <br /><code>      "x": 0.0,</code>
+  <br /><code>      "top": "",</code>
+  <br /><code>      "bottom": ""</code>
+  <br /><code>    &#125;</code>
+  <br /><code>  &#125;,</code>
+  <br /><code>  ],</code>
+  <br /><code>  "stages": [],</code>
+  <br /><code>  "rotation": 0.0,</code>
+  <br /><code>  "offset": &#123;</code>
+  <br /><code>    "x": 0.0,</code>
+  <br /><code>    "y": 0.0</code>
+  <br /><code>  &#125;,</code>
+  <br /><code>  "interiorView": false</code>
+  <br /><code>&#125;</code>
+</pre>
+
 
 串联格式为：
 
-```
-{"center": 10.0, "parts": [{part1},{part2},{part3},...], "stages": [{"stageId": 1, "partIndexes":[a,b,c,...]},{"stageId": 2, "partIndexes":[a,b,c,...]}...] "rotation": 0.0, "offset": {"x": 0.0, "y": 0.0}, "interiorView": false}
-```
+<pre>
+  <code>&#123;"center": 10.0, "parts": [&#123;part1&#125;,&#123;part2&#125;,&#123;part3&#125;,...], "stages": [&#123;"stageId": 1, "partIndexes":[a,b,c,...]&#125;,&#123;"stageId": 2, "partIndexes":[a,b,c,...]&#125;...] "rotation": 0.0, "offset": &#123;"x": 0.0, "y": 0.0&#125;, "interiorView": false&#125;</code>
+</pre>
 
 其中：
 
@@ -72,9 +73,9 @@
 - `"burns": {"angle": 0.0, "intensity": 0.0, "x": 0.0, "top": "", "bottom": ""}`：零件烧痕（burns）：angle是烧痕的角度，以逆时针计，单位为度；intensity是烧痕强度，有效取值范围为[0,1.5]；x是烧痕中轴线位置；
 - **"stages": []**：该蓝图快捷栏内所含部件，以图2-3-2中火箭快捷栏举例（零件摆放顺序依次从上至下），其完整格式为：
 
-  ```
-  "stages": [{"stageId": 1, "partIndexes": [5]},{"stageId": 2, "partIndexes": [3]},{"stageId": 3, "partIndexes": [0]},{"stageId": 4, "partIndexes": [2]}]
-  ```
+<pre>
+  <code>"stages": [&#123;"stageId": 1, "partIndexes": [5]&#125;,&#123;"stageId": 2, "partIndexes": [3]&#125;,&#123;"stageId": 3, "partIndexes": [0]&#125;,&#123;"stageId": 4, "partIndexes": [2]&#125;]</code>
+</pre>
 
   其中stageId为快捷栏顺序，partIndexes为该级快捷栏所含部件（其内序号为parts中的零件对应出现顺序）。
   <div className='img-screen'>
