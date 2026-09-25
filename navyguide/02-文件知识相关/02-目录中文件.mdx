@@ -25,153 +25,156 @@
 接下来是解释SFS储存文件的文件夹内文档的所含内容：
 
 ## 移动端1.5版本
-
-<pre>
-┏cache
-┃┣UnityShaderCache
-┃┃┣XXX* /unity着色器缓编译缓存
-┃┃┗version.txt /着色器缓存版本标识
-┃╚Rocket.png /分享火箭后生成
-┗files
-  ┣Cache
-  ┃┗Translations
-  ┃  ╚links /语言包链接库（选择语言概率生成）
-  ┣Custom Solar Systems /本地星系系统
-  ┃┗Example /示例星系-原版太阳系
-  ┃  ┣Heightmap Data /地形数据
-  ┃  ┃┗XXX.txt* /地形数据文件
-  ┃  ┣Planet Data /星球数据
-  ┃  ┃┗XXX.txt* /星球数据文件
-  ┃  ┣Texture Data /星系贴图资源
-  ┃  ┣Import_Settings.txt /星系加载设置
-  ┃  ┣Space_Center_Data.txt /发射台数据
-  ┃  ┗Version.txt /星系版本号
-  ┣Custom Translations /本地语言包
-  ┃┣Example.txt /示例语言包
-  ┃╚导入的语言包*
-  ┣il2cpp /代码语言转换相关
-  ┃┣Metadata
-  ┃┃┗global-metadata.det /代码混淆映射表
-  ┃┣Resoureces /预编译资源
-  ┃┗unity.ver /unity版本
-  ┣Logs /日志
-  ┃┣counter.txt /事件计数器
-  ┃┗XXX.txt* /运行日志
-  ┣Saving /游戏数据
-  ┃╠Blueprints /蓝图储存文件夹（保存第一个蓝图后生成）
-  ┃┃╚保存的蓝图*
-  ┃┃  ╠Blueprints.txt /蓝图文件
-  ┃┃  ╚Version.txt /版本号
-  ┃┣Notifications /通知内容
-  ┃┃┣TimeTracker /时间敏感数据
-  ┃┃┃┣First_Has_Any_Expansion.txt /首次打开拓展内容时间戳
-  ┃┃┃┣First_Has_Full_Bundle.txt /首次拥有完整捆绑包时间戳
-  ┃┃┃╠First_Seen_Shop.txt /首次查看商店（查看商店后生成）
-  ┃┃┃╠Last_Seen_Shop.txt /最后一次查看商店（查看商店后生成）
-  ┃┃┃┗Playtime.txt /游玩时长统计
-  ┃┃┣ask_notifications.txt /通知权限请求记录
-  ┃┃╠Ask_Rate_n* /尚不明确
-  ┃┃╠Converted_Planets /异常记录（出现非正常值后生成）
-  ┃┃┣Development_Update.txt /未读更新查阅
-  ┃┃╠Feature_Use.txt /功能使用统计（游玩后生成）
-  ┃┃┣Has_Ran_App.txt /首次运行标记
-  ┃┃┣InstalledVersion.txt /当前游戏版本
-  ┃┃┣Last_Played_Version.txt /最后游玩版本
-  ┃┃┣Played_Previously.txt /非首次运行标识
-  ┃┃┣purchase_debug.txt /购买日志
-  ┃┃╠Revent_Functionality.txt /版本回退日志（游玩后生成）
-  ┃┃╠Seen_Push_Notifications.txt /通知已查阅标识（查阅通知后生成）
-  ┃┃┣Translation_Example_Version.txt /翻译示例版本
-  ┃┃╠Tut_Basic_Build.txt /基础建造教程完成标记（游玩后生成）
-  ┃┃╠Tut_InfiniteBuildArea.txt /自由建造区域解锁标记（游玩后生成）
-  ┃┃╚Tut_Launch.txt /发射教程完成标记（游玩后生成）
-  ┃┣Seetings /设置
-  ┃┃╠AudioSettings.txt /声音设置（修改声音后生成）
-  ┃┃╠LanguageSettings_2.txt /语言设置（修改语言后生成）
-  ┃┃╠SandboxSettings.txt /作弊设置（作弊位于设置界面的版本生成，可带至高版本）
-  ┃┃╚VideoSettings.txt /画面设置（修改画面设置相关后生成）
-  ┃╚Worlds /世界（创建世界后生成）
-  ┃  ╠保存的世界*
-  ┃  ┃╠Backup/备份
-  ┃  ┃┃╠Backup_n* /具体备份文件
-  ┃  ┃┃┃╠Achievements.txt /航天器成就
-  ┃  ┃┃┃╠Branches.txt /发射日志
-  ┃  ┃┃┃╠CareerState.txt /生涯数据（仅在生涯模式下生成）
-  ┃  ┃┃┃╠Challenges.txt /挑战完成状况
-  ┃  ┃┃┃╠Rockets.txt /造物数据
-  ┃  ┃┃┃╠Version.txt /版本号
-  ┃  ┃┃┃╚WorldState.txt /全局游戏状态
-  ┃  ┃┃╚RevertPointer.txt /备份计数
-  ┃  ┃╠BlueprintPersistent /世界在建蓝图
-  ┃  ┃┃╠Blueprint.txt /蓝图文件
-  ┃  ┃┃╚Version.txt /版本号
-  ┃  ┃╠Persistent /主存档
-  ┃  ┃┃╠Achievements.txt /航天器成就
-  ┃  ┃┃╠Branches.txt /发射日志
-  ┃  ┃┃╠CareerState.txt /生涯数据（仅在生涯模式下生成）
-  ┃  ┃┃╠Challenges.txt /挑战完成状况
-  ┃  ┃┃╠Rockets.txt /造物数据
-  ┃  ┃┃╠Version.txt /版本号
-  ┃  ┃┃╚WorldState.txt /全局游戏状态
-  ┃  ┃╠Quicksaves /快速保存
-  ┃  ┃┃╠保存的进度*
-  ┃  ┃┃┃╠Achievements.txt /航天器成就
-  ┃  ┃┃┃╠Branches.txt /发射日志
-  ┃  ┃┃┃╠CareerState.txt /生涯数据（仅在生涯模式下生成）
-  ┃  ┃┃┃╠Challenges.txt /挑战完成状况
-  ┃  ┃┃┃╠Rockets.txt /造物数据
-  ┃  ┃┃┃╠Version.txt /版本号
-  ┃  ┃┃┃╚WorldState.txt /全局游戏状态
-  ┃  ┃┃╚display_order.ordr /排序索引
-  ┃  ┃╠RevertLaunch /发射前备份
-  ┃  ┃┃╠Achievements.txt /航天器成就
-  ┃  ┃┃╠Branches.txt /发射日志
-  ┃  ┃┃╠CareerState.txt /生涯数据（仅在生涯模式下生成）
-  ┃  ┃┃╠Challenges.txt /挑战完成状况
-  ┃  ┃┃╠Rockets.txt /造物数据
-  ┃  ┃┃╠Version.txt /版本号
-  ┃  ┃┃╚WorldState.txt /全局游戏状态
-  ┃  ┃╚WorldSettings.txt /世界设置
-  ┃  ╚display_order.ordr /排序索引
-  ┣Unity /Unity引擎相关数据目录
-  ┃ ┗37d4a9e6-dee9-461c-a7f9-24b5fd73821e
-  ┃  ┣Analytics /用户行为数据
-  ┃  ┃┣ArchivedEvents /历史事件存档
-  ┃  ┃┣config /分析功能配置参数
-  ┃  ┃┗values /分析指标数值存储
-  ┃  ┗PerformanceReporting /性能监控报告
-  ╚UnityServicesCachedMetrics /Unity服务缓存指标（生成条件尚不明确）
-</pre>
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <pre>
+  ┏cache
+  ┃┣UnityShaderCache
+  ┃┃┣XXX* /unity着色器缓编译缓存
+  ┃┃┗version.txt /着色器缓存版本标识
+  ┃╚Rocket.png /分享火箭后生成
+  ┗files
+    ┣Cache
+    ┃┗Translations
+    ┃  ╚links /语言包链接库（选择语言概率生成）
+    ┣Custom Solar Systems /本地星系系统
+    ┃┗Example /示例星系-原版太阳系
+    ┃  ┣Heightmap Data /地形数据
+    ┃  ┃┗XXX.txt* /地形数据文件
+    ┃  ┣Planet Data /星球数据
+    ┃  ┃┗XXX.txt* /星球数据文件
+    ┃  ┣Texture Data /星系贴图资源
+    ┃  ┣Import_Settings.txt /星系加载设置
+    ┃  ┣Space_Center_Data.txt /发射台数据
+    ┃  ┗Version.txt /星系版本号
+    ┣Custom Translations /本地语言包
+    ┃┣Example.txt /示例语言包
+    ┃╚导入的语言包*
+    ┣il2cpp /代码语言转换相关
+    ┃┣Metadata
+    ┃┃┗global-metadata.det /代码混淆映射表
+    ┃┣Resoureces /预编译资源
+    ┃┗unity.ver /unity版本
+    ┣Logs /日志
+    ┃┣counter.txt /事件计数器
+    ┃┗XXX.txt* /运行日志
+    ┣Saving /游戏数据
+    ┃╠Blueprints /蓝图储存文件夹（保存第一个蓝图后生成）
+    ┃┃╚保存的蓝图*
+    ┃┃  ╠Blueprints.txt /蓝图文件
+    ┃┃  ╚Version.txt /版本号
+    ┃┣Notifications /通知内容
+    ┃┃┣TimeTracker /时间敏感数据
+    ┃┃┃┣First_Has_Any_Expansion.txt /首次打开拓展内容时间戳
+    ┃┃┃┣First_Has_Full_Bundle.txt /首次拥有完整捆绑包时间戳
+    ┃┃┃╠First_Seen_Shop.txt /首次查看商店（查看商店后生成）
+    ┃┃┃╠Last_Seen_Shop.txt /最后一次查看商店（查看商店后生成）
+    ┃┃┃┗Playtime.txt /游玩时长统计
+    ┃┃┣ask_notifications.txt /通知权限请求记录
+    ┃┃╠Ask_Rate_n* /尚不明确
+    ┃┃╠Converted_Planets /异常记录（出现非正常值后生成）
+    ┃┃┣Development_Update.txt /未读更新查阅
+    ┃┃╠Feature_Use.txt /功能使用统计（游玩后生成）
+    ┃┃┣Has_Ran_App.txt /首次运行标记
+    ┃┃┣InstalledVersion.txt /当前游戏版本
+    ┃┃┣Last_Played_Version.txt /最后游玩版本
+    ┃┃┣Played_Previously.txt /非首次运行标识
+    ┃┃┣purchase_debug.txt /购买日志
+    ┃┃╠Revent_Functionality.txt /版本回退日志（游玩后生成）
+    ┃┃╠Seen_Push_Notifications.txt /通知已查阅标识（查阅通知后生成）
+    ┃┃┣Translation_Example_Version.txt /翻译示例版本
+    ┃┃╠Tut_Basic_Build.txt /基础建造教程完成标记（游玩后生成）
+    ┃┃╠Tut_InfiniteBuildArea.txt /自由建造区域解锁标记（游玩后生成）
+    ┃┃╚Tut_Launch.txt /发射教程完成标记（游玩后生成）
+    ┃┣Seetings /设置
+    ┃┃╠AudioSettings.txt /声音设置（修改声音后生成）
+    ┃┃╠LanguageSettings_2.txt /语言设置（修改语言后生成）
+    ┃┃╠SandboxSettings.txt /作弊设置（作弊位于设置界面的版本生成，可带至高版本）
+    ┃┃╚VideoSettings.txt /画面设置（修改画面设置相关后生成）
+    ┃╚Worlds /世界（创建世界后生成）
+    ┃  ╠保存的世界*
+    ┃  ┃╠Backup/备份
+    ┃  ┃┃╠Backup_n* /具体备份文件
+    ┃  ┃┃┃╠Achievements.txt /航天器成就
+    ┃  ┃┃┃╠Branches.txt /发射日志
+    ┃  ┃┃┃╠CareerState.txt /生涯数据（仅在生涯模式下生成）
+    ┃  ┃┃┃╠Challenges.txt /挑战完成状况
+    ┃  ┃┃┃╠Rockets.txt /造物数据
+    ┃  ┃┃┃╠Version.txt /版本号
+    ┃  ┃┃┃╚WorldState.txt /全局游戏状态
+    ┃  ┃┃╚RevertPointer.txt /备份计数
+    ┃  ┃╠BlueprintPersistent /世界在建蓝图
+    ┃  ┃┃╠Blueprint.txt /蓝图文件
+    ┃  ┃┃╚Version.txt /版本号
+    ┃  ┃╠Persistent /主存档
+    ┃  ┃┃╠Achievements.txt /航天器成就
+    ┃  ┃┃╠Branches.txt /发射日志
+    ┃  ┃┃╠CareerState.txt /生涯数据（仅在生涯模式下生成）
+    ┃  ┃┃╠Challenges.txt /挑战完成状况
+    ┃  ┃┃╠Rockets.txt /造物数据
+    ┃  ┃┃╠Version.txt /版本号
+    ┃  ┃┃╚WorldState.txt /全局游戏状态
+    ┃  ┃╠Quicksaves /快速保存
+    ┃  ┃┃╠保存的进度*
+    ┃  ┃┃┃╠Achievements.txt /航天器成就
+    ┃  ┃┃┃╠Branches.txt /发射日志
+    ┃  ┃┃┃╠CareerState.txt /生涯数据（仅在生涯模式下生成）
+    ┃  ┃┃┃╠Challenges.txt /挑战完成状况
+    ┃  ┃┃┃╠Rockets.txt /造物数据
+    ┃  ┃┃┃╠Version.txt /版本号
+    ┃  ┃┃┃╚WorldState.txt /全局游戏状态
+    ┃  ┃┃╚display_order.ordr /排序索引
+    ┃  ┃╠RevertLaunch /发射前备份
+    ┃  ┃┃╠Achievements.txt /航天器成就
+    ┃  ┃┃╠Branches.txt /发射日志
+    ┃  ┃┃╠CareerState.txt /生涯数据（仅在生涯模式下生成）
+    ┃  ┃┃╠Challenges.txt /挑战完成状况
+    ┃  ┃┃╠Rockets.txt /造物数据
+    ┃  ┃┃╠Version.txt /版本号
+    ┃  ┃┃╚WorldState.txt /全局游戏状态
+    ┃  ┃╚WorldSettings.txt /世界设置
+    ┃  ╚display_order.ordr /排序索引
+    ┣Unity /Unity引擎相关数据目录
+    ┃ ┗37d4a9e6-dee9-461c-a7f9-24b5fd73821e
+    ┃  ┣Analytics /用户行为数据
+    ┃  ┃┣ArchivedEvents /历史事件存档
+    ┃  ┃┣config /分析功能配置参数
+    ┃  ┃┗values /分析指标数值存储
+    ┃  ┗PerformanceReporting /性能监控报告
+    ╚UnityServicesCachedMetrics /Unity服务缓存指标（生成条件尚不明确）
+  </pre>
+</div>
 
 ## 移动端1.4版本
 
-<pre>
-┏cache
-┃┣UnityShaderCache
-┃┃┣XXX* /unity着色器缓编译缓存
-┃┃┗version.txt /着色器缓存版本标识
-┃╚Rocket.png /分享火箭后生成
-┗files
-  ┣Resources
-  ┃┣ Planet Data /星球数据
-  ┃┣Textures /星系贴图资源
-  ┣Saving
-  ┃╠Blueprints /蓝图存放文件夹（保存蓝图后创建）
-  ┃┃╚保存的蓝图.bp*
-  ┃┗Worlds /世界数据
-  ┃  ┗main
-  ┃   ┣ Quicksaves
-  ┃   ┃╚保存的进度.qks* /快速保存存档（创建快速保存存档后创建）
-  ┃   ╚Persistant.qks /主存档（游玩并发射后创建）
-  ┣Unity /Unity引擎相关数据目录
-  ┃ ┗37d4a9e6-dee9-461c-a7f9-24b5fd73821e
-  ┃  ┣Analytics /用户行为数据
-  ┃  ┃┣ArchivedEvents /历史事件存档
-  ┃  ┃┣config /分析功能配置参数
-  ┃  ┃┗values /分析指标数值存储
-  ┃  ╚PerformanceReporting /性能监控报告
-  ╚UnityServicesCachedMetrics /Unity服务缓存指标（生成条件尚不明确）
-</pre>
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <pre>
+  ┏cache
+  ┃┣UnityShaderCache
+  ┃┃┣XXX* /unity着色器缓编译缓存
+  ┃┃┗version.txt /着色器缓存版本标识
+  ┃╚Rocket.png /分享火箭后生成
+  ┗files
+    ┣Resources
+    ┃┣ Planet Data /星球数据
+    ┃┣Textures /星系贴图资源
+    ┣Saving
+    ┃╠Blueprints /蓝图存放文件夹（保存蓝图后创建）
+    ┃┃╚保存的蓝图.bp*
+    ┃┗Worlds /世界数据
+    ┃  ┗main
+    ┃   ┣ Quicksaves
+    ┃   ┃╚保存的进度.qks* /快速保存存档（创建快速保存存档后创建）
+    ┃   ╚Persistant.qks /主存档（游玩并发射后创建）
+    ┣Unity /Unity引擎相关数据目录
+    ┃ ┗37d4a9e6-dee9-461c-a7f9-24b5fd73821e
+    ┃  ┣Analytics /用户行为数据
+    ┃  ┃┣ArchivedEvents /历史事件存档
+    ┃  ┃┣config /分析功能配置参数
+    ┃  ┃┗values /分析指标数值存储
+    ┃  ╚PerformanceReporting /性能监控报告
+    ╚UnityServicesCachedMetrics /Unity服务缓存指标（生成条件尚不明确）
+  </pre>
+</div>
 
 ## PC端
 
